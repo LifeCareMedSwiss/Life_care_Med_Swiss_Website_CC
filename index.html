@@ -103,9 +103,8 @@ nav a {
   display: none;
 }
 
-.menu-item.open .mega-menu {
+.menu-item:hover .mega-menu {
   display: grid;
-}
 
 .mega-column {
   min-width: 220px;
@@ -1392,17 +1391,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showSection('home');
   showCategory('all');
 
- document.querySelectorAll(".has-dropdown > a").forEach(link => {
-    link.addEventListener("click", function(e){
-      e.preventDefault();
-      const parent = this.parentElement;
-      document.querySelectorAll(".menu-item.open").forEach(el => {
-        if(el !== parent) el.classList.remove("open");
-      });
-      parent.classList.toggle("open");
-    });
-  });
-
+ 
   // MENU-LINKS BILDER
   document.querySelectorAll(".menu-link").forEach(link => {
     link.addEventListener("click", function(e){
@@ -1738,8 +1727,6 @@ This website does not use tracking cookies...
   </div>
 </div>
 
-
-<div class="sidebar" id="menu"></div>
 
 <script>
 const menu = document.getElementById("menu");
