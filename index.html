@@ -1392,8 +1392,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showSection('home');
   showCategory('all');
 
-  // DROPDOWN
-  document.querySelectorAll(".has-dropdown > a").forEach(link => {
+ document.querySelectorAll(".has-dropdown > a").forEach(link => {
     link.addEventListener("click", function(e){
       e.preventDefault();
       const parent = this.parentElement;
@@ -1404,7 +1403,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
- 
+  // MENU-LINKS BILDER
+  document.querySelectorAll(".menu-link").forEach(link => {
+    link.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      const img = this.dataset.img;
+      if(img) openLightbox(img);
+    });
+  });
+
+});
 
 const catalog = {
   Urology: {
