@@ -6,29 +6,61 @@
 <title>LifeCare Med Swiss – PRO</title>
 
 <style>
-/* DEIN GANZES CSS HIER */
+/* ===== SUBCAT STYLES ===== */
 .subcat {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .subcat h4 {
   color: #0b2a4a;
-  font-size: 13px;
-  margin: 10px 0 5px 0;
-  font-weight: 700;
+  font-size: 12px;
+  margin: 12px 0 6px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 5px 8px;
+  background: linear-gradient(90deg, #e8f4ff, transparent);
+  border-left: 3px solid #18b6d6;
+  border-radius: 0 4px 4px 0;
+  cursor: default;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.subcat h4:hover {
+  background: linear-gradient(90deg, #18b6d6, #0b9ab8);
+  color: white;
 }
 
 .subcat a {
   display: block;
-  color: #333;
-  font-size: 13px;
-  padding: 3px 0;
+  color: #444;
+  font-size: 12.5px;
+  padding: 4px 8px 4px 14px;
   text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.18s ease;
+  position: relative;
+}
+
+.subcat a::before {
+  content: '›';
+  position: absolute;
+  left: 4px;
+  color: #ccc;
+  transition: color 0.18s;
 }
 
 .subcat a:hover {
   color: #18b6d6;
+  background: #f0fafd;
+  padding-left: 18px;
 }
+
+.subcat a:hover::before {
+  color: #18b6d6;
+}
+
+/* ===== SIDEBAR ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -44,37 +76,107 @@ body {
 }
 
 .category {
-  padding: 12px;
-  background: #1c1c1c;
-  margin-top: 5px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, #1c1c1c, #222);
+  margin-top: 6px;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category:hover, .category.open {
+  background: linear-gradient(135deg, #0b2a4a, #103a60);
+  border-left-color: #18b6d6;
+  color: #18b6d6;
+}
+
+.category .cat-arrow {
+  transition: transform 0.3s ease;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.category.open .cat-arrow {
+  transform: rotate(90deg);
 }
 
 .subcategory {
-  padding: 10px 15px;
+  padding: 9px 14px;
   background: #2a2a2a;
-  margin: 4px 0;
+  margin: 3px 0 3px 8px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #aaa;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subcategory:hover, .subcategory.open {
+  background: #1a3a5c;
+  color: #18b6d6;
+  border-left-color: #18b6d6;
+}
+
+.subcategory .sub-arrow {
+  transition: transform 0.3s ease;
+  font-size: 9px;
+  opacity: 0.5;
+}
+
+.subcategory.open .sub-arrow {
+  transform: rotate(90deg);
+}
+
+.sub-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.sub-container.open {
+  max-height: 2000px;
 }
 
 .products {
-  display: none;
-  padding-left: 15px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  padding-left: 16px;
+}
+
+.products.open {
+  max-height: 2000px;
 }
 
 .product {
-  background: #333;
-  margin: 4px 0;
-  padding: 8px;
+  background: #2e2e2e;
+  margin: 3px 0;
+  padding: 7px 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12.5px;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border-left: 2px solid transparent;
 }
 
-/* NAV BASIC */
+.product:hover {
+  background: #0b2a4a;
+  color: #18b6d6;
+  border-left-color: #18b6d6;
+  padding-left: 14px;
+}
 
+/* ===== NAV BASIC ===== */
 nav ul {
   display: flex;
   justify-content: center;
@@ -86,6 +188,7 @@ nav ul {
   list-style: none;
   padding: 0;
 }
+
 nav li {
   position: relative;
 }
@@ -98,61 +201,71 @@ nav a {
   display: inline-block;
 }
 
-
-/* BUTTON */
+/* ===== MEGA MENU ===== */
 .dropbtn {
   cursor: pointer;
 }
 
-/* DROPDOWN BOX */
 .dropdown {
   position: relative;
 }
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  z-index: 9999;
-  min-width: 280px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
 .mega-menu {
   display: grid;
   visibility: hidden;
   opacity: 0;
+  transform: translateY(-8px);
   pointer-events: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
-  width: 900px;
+  width: 960px;
   background: white;
   z-index: 9999;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: opacity 0.2s ease;
+  gap: 0;
+  padding: 0;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18), 0 4px 20px rgba(11,42,74,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: opacity 0.28s cubic-bezier(0.4,0,0.2,1), transform 0.28s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0.28s;
 }
 
-.menu-item:hover .mega-menu {
+.menu-item:hover .mega-menu,
+.menu-item.open .mega-menu {
   visibility: visible;
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
+  transition: opacity 0.28s cubic-bezier(0.4,0,0.2,1), transform 0.28s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s;
 }
 
 .mega-column {
-  min-width: 220px;
+  min-width: 0;
+  padding: 24px 22px;
+  border-right: 1px solid #f0f4f8;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.mega-column:last-child {
+  border-right: none;
 }
 
 .mega-column h3 {
   color: #0b2a4a;
-  margin-bottom: 10px;
+  margin: 0 0 14px 0;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-bottom: 2px solid #18b6d6;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
 }
-
 
 .menu-item {
   position: relative;
@@ -167,7 +280,7 @@ nav a {
   z-index: 1;
 }
 
-/* COLUMN STYLE */
+/* ===== COLUMN (old) ===== */
 .column {
   min-width: 180px;
 }
@@ -187,27 +300,10 @@ nav a {
 .dropdown-content a:hover {
   color: #18b6d6;
 }
+
 .page {
   display: none;
 }
-
-.column {
-  min-width: 200px;
-}
-
-.column h4 {
-  color: green;
-  margin-bottom: 10px;
-}
-
-.column a {
-  display: block;
-  color: #333;
-  margin: 5px 0;
-  text-decoration: none;
-}
-
-
 
 header.hero {
     display: block;
@@ -231,29 +327,67 @@ header.hero {
     cursor:pointer;
 }
 
-
 .highlight {
     font-weight: 700;
     color: #18b6d6;
 }
 
+/* ===== LIGHTBOX ===== */
 .lightbox {
   display: none;
   position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  justify-content:center;
-  align-items:center;
-  z-index:99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background: transparent;
 }
 
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+/* Lightbox overlay - separate element, no background on .lightbox itself */
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 15, 30, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active .lightbox-overlay {
+  opacity: 1;
+}
+
+.lightbox-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-img {
+  max-width: 88vw;
+  max-height: 85vh;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  transform: scale(0.88);
+  opacity: 0;
+  transition: transform 0.32s cubic-bezier(0.34,1.56,0.64,1), opacity 0.28s ease;
+}
+
+.lightbox.active #lightbox-img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Scroll-zoom on lightbox image */
+#lightbox-img.zoomed {
+  transform: scale(1.35) !important;
+  cursor: zoom-out;
 }
 
 .lightbox .close {
@@ -263,6 +397,37 @@ header.hero {
     font-size: 40px;
     color: white;
     cursor: pointer;
+    z-index: 3;
+}
+
+/* ===== HOVER IMAGE PREVIEW in mega menu ===== */
+.menu-preview {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99998;
+  opacity: 0;
+  transform: scale(0.88) translateY(6px);
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.34,1.2,0.64,1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.28);
+  background: white;
+  padding: 6px;
+  max-width: 220px;
+}
+
+.menu-preview.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.menu-preview img {
+  width: 208px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #f4f7fb;
+  display: block;
 }
 
 /* MAIN CSS */
@@ -506,6 +671,7 @@ margin-bottom:25px;
 }
 
 
+
 footer{
 background:var(--primary);
 color:white;
@@ -541,14 +707,8 @@ margin-top:50px;
     }
 }
 
-.lightbox {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
 .lightbox.active {
     display: flex;
-    opacity: 1;
 }
 
 </style>
@@ -1180,8 +1340,16 @@ LifeCare Med Swiss, acting as CH-Rep, manufacturer, and importer, is based in Sw
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
-    <span class="close" onclick="closeLightbox()">×</span>
-    <img id="lightbox-img">
+  <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+  <div class="lightbox-content">
+    <img id="lightbox-img" alt="Product">
+  </div>
+  <span class="close" onclick="closeLightbox()">×</span>
+</div>
+
+<!-- HOVER PREVIEW -->
+<div class="menu-preview" id="menuPreview">
+  <img id="menuPreviewImg" src="" alt="">
 </div>
 
 <div id="regPopup" class="lightbox">
@@ -1269,7 +1437,7 @@ Documents are available upon request via official channels, including ISO 13485 
   </div>
 
 </section>
-  
+
 <div class="sidebar" id="menu" style="display:none;"></div>
 
 <footer>
@@ -1360,20 +1528,7 @@ document.addEventListener("keydown", function(e){
 
 });
 
-document.querySelectorAll(".menu-link").forEach(link => {
-
-  link.addEventListener("click", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-
-    const img = this.dataset.img;
-
-    if(img){
-      openLightbox(img);
-    }
-  });
-
-});
+// menu-link events handled in DOMContentLoaded
 
 document.addEventListener("click", function(e){
 
@@ -1417,7 +1572,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showSection('home');
   showCategory('all');
 
- document.querySelectorAll(".has-dropdown > a").forEach(link => {
+document.querySelectorAll(".has-dropdown > a").forEach(link => {
     link.addEventListener("click", function(e){
       e.preventDefault();
       const parent = this.parentElement;
@@ -1428,17 +1583,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // MENU-LINKS BILDER
+
+  // MENU-LINKS: hover preview + click lightbox
+  const preview = document.getElementById("menuPreview");
+  const previewImg = document.getElementById("menuPreviewImg");
+
   document.querySelectorAll(".menu-link").forEach(link => {
+    link.addEventListener("mouseenter", function(e){
+      const imgSrc = this.dataset.img;
+      if(!imgSrc || !preview || !previewImg) return;
+      previewImg.src = imgSrc;
+      preview.classList.add("visible");
+      positionPreview(e);
+    });
+
+    link.addEventListener("mousemove", function(e){
+      positionPreview(e);
+    });
+
+    link.addEventListener("mouseleave", function(){
+      if(preview) preview.classList.remove("visible");
+    });
+
     link.addEventListener("click", function(e){
       e.preventDefault();
       e.stopPropagation();
+      if(preview) preview.classList.remove("visible");
       const img = this.dataset.img;
       if(img) openLightbox(img);
     });
   });
 
+  function positionPreview(e){
+    if(!preview) return;
+    const x = e.clientX + 20;
+    const y = e.clientY - 80;
+    const maxX = window.innerWidth - 240;
+    const maxY = window.innerHeight - 190;
+    preview.style.left = Math.min(x, maxX) + "px";
+    preview.style.top = Math.max(10, Math.min(y, maxY)) + "px";
+  }
+
 });
+ 
 
 const catalog = {
   Urology: {
@@ -1622,11 +1809,13 @@ function showCategory(category){
 }
 
 function openLightbox(src){
-
   const lb = document.getElementById("lightbox");
   const img = document.getElementById("lightbox-img");
 
   if(!lb || !img || !src) return;
+
+  img.classList.remove("zoomed");
+  img.src = "";
 
   img.onload = () => {
     lb.classList.add("active");
@@ -1638,6 +1827,20 @@ function openLightbox(src){
 
   img.src = src;
 }
+
+// Scroll-to-zoom on lightbox image
+document.addEventListener("wheel", function(e){
+  const lb = document.getElementById("lightbox");
+  if(!lb || !lb.classList.contains("active")) return;
+  const img = document.getElementById("lightbox-img");
+  if(!img) return;
+  e.preventDefault();
+  if(e.deltaY < 0){
+    img.classList.add("zoomed");
+  } else {
+    img.classList.remove("zoomed");
+  }
+}, { passive: false });
 
 function closeLightbox(){
 
@@ -1653,11 +1856,7 @@ function closeLightbox(){
 }
 
 document.getElementById("lightbox")?.addEventListener("click", function(e){
-
-    if(e.target === this){
-        closeLightbox();
-    }
-
+  // handled by overlay's onclick
 });
 
 function openPrivacyPopup(){
@@ -1771,38 +1970,61 @@ Object.keys(catalog).forEach(mainCat => {
 
   const catDiv = document.createElement("div");
   catDiv.className = "category";
-  catDiv.innerText = mainCat;
+  catDiv.innerHTML = `<span>${mainCat}</span><span class="cat-arrow">▶</span>`;
 
   const subContainer = document.createElement("div");
-  subContainer.style.display = "none";
+  subContainer.className = "sub-container";
 
-  catDiv.onclick = () => {
-    subContainer.style.display =
-      subContainer.style.display === "none" ? "block" : "none";
-  };
+  catDiv.addEventListener("click", () => {
+    const isOpen = subContainer.classList.contains("open");
+    // Close all others
+    document.querySelectorAll(".sub-container.open").forEach(el => {
+      el.classList.remove("open");
+      el.previousElementSibling?.classList.remove("open");
+    });
+    if(!isOpen){
+      subContainer.classList.add("open");
+      catDiv.classList.add("open");
+    } else {
+      catDiv.classList.remove("open");
+    }
+  });
 
   Object.keys(catalog[mainCat]).forEach(subCat => {
 
     const subDiv = document.createElement("div");
     subDiv.className = "subcategory";
-    subDiv.innerText = subCat;
+    subDiv.innerHTML = `<span>${subCat}</span><span class="sub-arrow">▶</span>`;
 
     const productBox = document.createElement("div");
     productBox.className = "products";
-    productBox.style.display = "none";
 
     catalog[mainCat][subCat].forEach(p => {
       const item = document.createElement("div");
       item.className = "product";
       item.innerText = p.name;
+      item.onclick = (e) => {
+        e.stopPropagation();
+        if(p.img) openLightbox(p.img);
+      };
       productBox.appendChild(item);
     });
 
-    subDiv.onclick = (e) => {
+    subDiv.addEventListener("click", (e) => {
       e.stopPropagation();
-      productBox.style.display =
-        productBox.style.display === "none" ? "block" : "none";
-    };
+      const isOpen = productBox.classList.contains("open");
+      // Close sibling productBoxes
+      subContainer.querySelectorAll(".products.open").forEach(el => {
+        el.classList.remove("open");
+        el.previousElementSibling?.classList.remove("open");
+      });
+      if(!isOpen){
+        productBox.classList.add("open");
+        subDiv.classList.add("open");
+      } else {
+        subDiv.classList.remove("open");
+      }
+    });
 
     subContainer.appendChild(subDiv);
     subContainer.appendChild(productBox);
@@ -1946,5 +2168,7 @@ function closeProductPopup(){
   </div>
 </div>
 
+
 </body>
 </html>
+
