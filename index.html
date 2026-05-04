@@ -271,7 +271,7 @@ nav a:hover{color:var(--accent);}
 .hero-slideshow{
   position:relative;
   width:100%;
-  height:520px;
+  height:clamp(580px, 70vh, 700px);
   overflow:hidden;
 }
 
@@ -749,8 +749,11 @@ section p,section li{color:#d7e6ff;}
 /* ===== REGULATORY ===== */
 #regulatory\ documents .reg-center{
   text-align:center;
-  max-width:780px;
+  max-width:900px;
   margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .reg-doc-list{
@@ -1058,6 +1061,9 @@ footer a{color:var(--accent);}
       </div>
     </li>
 
+    <li><a href="javascript:void(0)" onclick="showSection('regcheck')"
+       data-en="RegCheck Service" data-de="RegCheck Service" data-es="Servicio RegCheck" data-fr="Service RegCheck" data-it="Servizio RegCheck" data-ru="Сервис RegCheck" data-uk="Сервіс RegCheck">RegCheck Service</a></li>
+
     <li><a href="javascript:void(0)" onclick="showSection('video')"
        data-en="Videos" data-de="Videos" data-es="Videos" data-fr="Vidéos" data-it="Video" data-ru="Видео" data-uk="Відео">Videos</a></li>
 
@@ -1168,41 +1174,53 @@ footer a{color:var(--accent);}
           data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
       </div>
     </div>
-    <div class="hero-slide" style="background:radial-gradient(circle at 30% 50%,#0b3060,#071a2f);">
-      <div class="hero-slide-overlay" style="background:linear-gradient(130deg,rgba(7,26,47,0.65),rgba(11,42,74,0.5));"></div>
-      <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(135deg,rgba(24,182,214,0.12),rgba(0,58,112,0.08));clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);"></div>
-      <div style="position:absolute;right:8%;top:50%;transform:translateY(-50%);font-size:clamp(80px,12vw,140px);opacity:0.06;font-family:'Montserrat',sans-serif;font-weight:900;color:#18b6d6;letter-spacing:-3px;line-height:1;">45</div>
-      <div class="hero-slide-content" style="text-align:left;max-width:820px;">
-        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
-          <span style="width:32px;height:2px;background:#18b6d6;display:inline-block;"></span>
-          <span style="color:#18b6d6;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;"
-            data-en="Market Access" data-de="Marktzugang" data-es="Acceso al Mercado" data-fr="Accès au Marché" data-it="Accesso al Mercato" data-ru="Доступ на рынок" data-uk="Доступ до ринку">Market Access</span>
+    <!-- SLIDE 3: RegCheck Service -->
+    <div class="hero-slide" style="background:linear-gradient(135deg,#071a2f 0%,#0a2540 55%,#0b3560 100%);">
+      <div class="hero-slide-overlay" style="background:linear-gradient(145deg,rgba(7,26,47,0.55),rgba(24,182,214,0.08));"></div>
+      <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;">
+        <div style="position:absolute;right:-3%;top:50%;transform:translateY(-50%);font-size:clamp(90px,15vw,180px);opacity:0.04;font-family:'Montserrat',sans-serif;font-weight:900;color:#18b6d6;letter-spacing:-3px;line-height:1;">REG</div>
+      </div>
+      <div class="hero-slide-content" style="text-align:center;max-width:860px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <span style="width:36px;height:2px;background:#18b6d6;display:inline-block;"></span>
+          <span style="color:#18b6d6;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;"
+            data-en="For International Companies" data-de="Für internationale Unternehmen" data-es="Para empresas internacionales" data-fr="Pour les entreprises internationales" data-it="Per aziende internazionali" data-ru="Для международных компаний" data-uk="Для міжнародних компаній">For International Companies</span>
+          <span style="width:36px;height:2px;background:#18b6d6;display:inline-block;"></span>
         </div>
-        <h1 style="font-size:clamp(28px,4.5vw,56px);line-height:1.1;margin-bottom:14px;">
-          <span style="display:block;color:#18b6d6;font-size:clamp(44px,7.5vw,96px);line-height:1;">REACHING</span>
-          <span style="display:block;">
-            <span style="color:#18b6d6;font-size:clamp(52px,9vw,110px);font-style:italic;line-height:0.9;">45 </span>
-            <span data-en="countries" data-de="Länder" data-es="países" data-fr="pays" data-it="paesi" data-ru="стран" data-uk="країн">countries</span>
-          </span>
+        <h1 style="font-size:clamp(32px,5.5vw,66px);line-height:1.05;margin-bottom:16px;font-weight:900;">
+          <span style="display:block;color:#18b6d6;font-size:clamp(42px,7vw,84px);line-height:1;">RegCheck</span>
+          <span data-en="Service" data-de="Service" data-es="Servicio" data-fr="Service" data-it="Servizio" data-ru="Сервис" data-uk="Сервіс">Service</span>
         </h1>
-        <p style="font-size:clamp(13px,1.4vw,16px);max-width:580px;line-height:1.75;"
-          data-en="Exclusive market access and targeted introduction — we open doors in new markets for your products with full regulatory support, legal representation, and distribution network activation."
-          data-de="Exklusiver Marktzugang und gezielte Markteinführung — wir öffnen Türen in neuen Märkten mit vollständiger regulatorischer Unterstützung, rechtlicher Vertretung und Aktivierung des Vertriebsnetzes."
-          data-es="Acceso exclusivo al mercado e introducción orientada: abrimos puertas en nuevos mercados con soporte regulatorio completo, representación legal y activación de redes de distribución."
-          data-fr="Accès exclusif au marché et introduction ciblée — nous ouvrons des portes sur de nouveaux marchés avec un soutien réglementaire complet, une représentation légale et une activation du réseau de distribution."
-          data-it="Accesso esclusivo al mercato e introduzione mirata — apriamo le porte in nuovi mercati con supporto normativo completo, rappresentanza legale e attivazione della rete distributiva."
-          data-ru="Эксклюзивный доступ на рынок и целенаправленное продвижение — мы открываем двери на новые рынки с полной регуляторной поддержкой, юридическим представительством и активацией дистрибьюторской сети."
-          data-uk="Ексклюзивний доступ до ринку та цілеспрямоване просування — ми відкриваємо двері на нові ринки з повною регуляторною підтримкою, юридичним представництвом та активацією дистриб'юторської мережі.">
-          Exclusive market access and targeted introduction — we open doors in new markets for your products with full regulatory support, legal representation, and distribution network activation.
+        <p style="font-size:clamp(13px,1.5vw,17px);max-width:700px;margin:0 auto 24px;line-height:1.8;"
+          data-en="We support international companies in meeting all regulatory requirements to bring their medical devices to market — from technical documentation and compliance checks to full market registration."
+          data-de="Wir unterstützen internationale Unternehmen bei der Erfüllung aller regulatorischen Anforderungen, um ihre Medizinprodukte in Verkehr zu bringen — von technischer Dokumentation und Compliance-Prüfung bis zur vollständigen Marktregistrierung."
+          data-es="Apoyamos a empresas internacionales en el cumplimiento de todos los requisitos regulatorios para comercializar sus dispositivos médicos — desde la documentación técnica y verificaciones de cumplimiento hasta el registro completo en el mercado."
+          data-fr="Nous accompagnons les entreprises internationales dans le respect de toutes les exigences réglementaires pour mettre leurs dispositifs médicaux sur le marché — de la documentation technique aux vérifications de conformité jusqu'à l'enregistrement complet."
+          data-it="Supportiamo le aziende internazionali nel rispetto di tutti i requisiti normativi per immettere i loro dispositivi medici sul mercato — dalla documentazione tecnica e verifica della conformità fino alla registrazione completa."
+          data-ru="Мы помогаем международным компаниям выполнить все регуляторные требования для вывода медицинских изделий на рынок — от технической документации и проверки соответствия до полной рыночной регистрации."
+          data-uk="Ми підтримуємо міжнародні компанії у виконанні всіх регуляторних вимог для виведення медичних виробів на ринок — від технічної документації та перевірки відповідності до повної ринкової реєстрації.">
+          We support international companies in meeting all regulatory requirements to bring their medical devices to market — from technical documentation and compliance checks to full market registration.
         </p>
-        <div class="hero-contact-btns" style="justify-content:flex-start;margin-top:18px;">
-          <button onclick="showSection('about us')" style="padding:11px 24px;border:none;border-radius:8px;background:#18b6d6;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:14px;"
-            data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
+        <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:22px;">
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Technical Documentation" data-de="Techn. Dokumentation" data-es="Doc. Técnica" data-fr="Doc. Technique" data-it="Doc. Tecnica" data-ru="Тех. Документация" data-uk="Тех. Документація">Technical Documentation</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Compliance Check (1 day)" data-de="Compliance-Prüfung (1 Tag)" data-es="Verificación (1 día)" data-fr="Vérif. conformité (1 jour)" data-it="Verifica conformità (1 gg)" data-ru="Проверка (1 день)" data-uk="Перевірка (1 день)">Compliance Check (1 day)</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Market Registration" data-de="Marktregistrierung" data-es="Registro de Mercado" data-fr="Enregistrement Marché" data-it="Registrazione Mercato" data-ru="Рыночная Регистрация" data-uk="Ринкова Реєстрація">Market Registration</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="CH-Rep — Swiss Market Access" data-de="CH-Rep — Schweizer Marktzugang" data-es="CH-Rep — Acceso mercado suizo" data-fr="CH-Rep — Accès marché suisse" data-it="CH-Rep — Accesso mercato svizzero" data-ru="CH-Rep — Доступ на рынок Швейцарии" data-uk="CH-Rep — Доступ до ринку Швейцарії">CH-Rep — Swiss Market Access</div>
+          </div>
         </div>
+        <button onclick="showSection('about us')" style="padding:12px 28px;border:none;border-radius:8px;background:#18b6d6;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:14px;"
+          data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
       </div>
     </div>
 
-    <!-- SLIDE 3: High Delivery Potential & Efficient Pricing -->
+    <!-- SLIDE 4: High Delivery Potential & Efficient Pricing -->
     <div class="hero-slide" style="background:linear-gradient(135deg,#0d3d6e,#071a2f 60%,#0a2a50);">
       <div class="hero-slide-overlay" style="background:linear-gradient(150deg,rgba(7,26,47,0.6),rgba(24,182,214,0.12));"></div>
       <div style="position:absolute;inset:0;overflow:hidden;">
@@ -1238,6 +1256,41 @@ footer a{color:var(--accent);}
         <div class="hero-contact-btns" style="margin-top:10px;">
           <button onclick="openWhatsAppPopup()" style="padding:11px 22px;border:none;border-radius:8px;background:#25D366;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;">📱 WhatsApp</button>
           <button onclick="openEmailPopup()" style="padding:11px 22px;border:2px solid rgba(255,255,255,0.35);border-radius:8px;background:transparent;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;">📧 Email</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Reaching 45 countries -->
+    <div class="hero-slide" style="background:radial-gradient(circle at 30% 50%,#0b3060,#071a2f);">
+      <div class="hero-slide-overlay" style="background:linear-gradient(130deg,rgba(7,26,47,0.65),rgba(11,42,74,0.5));"></div>
+      <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(135deg,rgba(24,182,214,0.12),rgba(0,58,112,0.08));clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);"></div>
+      <div style="position:absolute;right:8%;top:50%;transform:translateY(-50%);font-size:clamp(80px,12vw,140px);opacity:0.06;font-family:'Montserrat',sans-serif;font-weight:900;color:#18b6d6;letter-spacing:-3px;line-height:1;">45</div>
+      <div class="hero-slide-content" style="text-align:left;max-width:820px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
+          <span style="width:32px;height:2px;background:#18b6d6;display:inline-block;"></span>
+          <span style="color:#18b6d6;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;"
+            data-en="Market Access" data-de="Marktzugang" data-es="Acceso al Mercado" data-fr="Accès au Marché" data-it="Accesso al Mercato" data-ru="Доступ на рынок" data-uk="Доступ до ринку">Market Access</span>
+        </div>
+        <h1 style="font-size:clamp(28px,4.5vw,56px);line-height:1.1;margin-bottom:14px;">
+          <span style="display:block;color:#18b6d6;font-size:clamp(44px,7.5vw,96px);line-height:1;">REACHING</span>
+          <span style="display:block;">
+            <span style="color:#18b6d6;font-size:clamp(52px,9vw,110px);font-style:italic;line-height:0.9;">45 </span>
+            <span data-en="countries" data-de="Länder" data-es="países" data-fr="pays" data-it="paesi" data-ru="стран" data-uk="країн">countries</span>
+          </span>
+        </h1>
+        <p style="font-size:clamp(13px,1.4vw,16px);max-width:580px;line-height:1.75;"
+          data-en="Exclusive market access and targeted introduction — we open doors in new markets for your products with full regulatory support, legal representation, and distribution network activation."
+          data-de="Exklusiver Marktzugang und gezielte Markteinführung — wir öffnen Türen in neuen Märkten mit vollständiger regulatorischer Unterstützung, rechtlicher Vertretung und Aktivierung des Vertriebsnetzes."
+          data-es="Acceso exclusivo al mercado e introducción orientada: abrimos puertas en nuevos mercados con soporte regulatorio completo, representación legal y activación de redes de distribución."
+          data-fr="Accès exclusif au marché et introduction ciblée — nous ouvrons des portes sur de nouveaux marchés avec un soutien réglementaire complet, une représentation légale et une activation du réseau de distribution."
+          data-it="Accesso esclusivo al mercato e introduzione mirata — apriamo le porte in nuovi mercati con supporto normativo completo, rappresentanza legale e attivazione della rete distributiva."
+          data-ru="Эксклюзивный доступ на рынок и целенаправленное продвижение — мы открываем двери на новые рынки с полной регуляторной поддержкой, юридическим представительством и активацией дистрибьюторской сети."
+          data-uk="Ексклюзивний доступ до ринку та цілеспрямоване просування — ми відкриваємо двері на нові ринки з повною регуляторною підтримкою, юридичним представництвом та активацією дистриб'юторської мережі.">
+          Exclusive market access and targeted introduction — we open doors in new markets for your products with full regulatory support, legal representation, and distribution network activation.
+        </p>
+        <div class="hero-contact-btns" style="justify-content:flex-start;margin-top:18px;">
+          <button onclick="showSection('about us')" style="padding:11px 24px;border:none;border-radius:8px;background:#18b6d6;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:14px;"
+            data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
         </div>
       </div>
     </div>
@@ -1284,9 +1337,9 @@ footer a{color:var(--accent);}
       <div style="position:absolute;inset:0;overflow:hidden;">
         <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:conic-gradient(from 180deg,rgba(24,182,214,0.06),rgba(18,182,214,0.02),rgba(24,182,214,0.08),rgba(11,42,74,0));pointer-events:none;animation:rotateSlow 18s linear infinite;"></div>
       </div>
-      <div class="hero-slide-content" style="text-align:right;max-width:820px;margin-left:auto;margin-right:0;padding-right:0;">
-        <h1 style="font-size:clamp(48px,9vw,112px);line-height:0.95;color:#18b6d6;margin-bottom:16px;font-weight:900;letter-spacing:-2px;">QUALITY</h1>
-        <p style="font-size:clamp(14px,1.5vw,18px);color:#d7e6ff;line-height:1.75;max-width:560px;margin-left:auto;"
+      <div class="hero-slide-content" style="text-align:center;max-width:820px;width:100%;padding:24px 20px;">
+        <h1 style="font-size:clamp(48px,9vw,112px);line-height:0.95;color:#18b6d6;margin-bottom:14px;font-weight:900;letter-spacing:-2px;">QUALITY</h1>
+        <p style="font-size:clamp(13px,1.4vw,16px);color:#d7e6ff;line-height:1.7;max-width:580px;margin:0 auto 18px;"
           data-en="Products undergo rigorous testing by medical professionals to meet international quality standards — ISO 13485, EU MDR 2017/745, and Swiss regulatory compliance."
           data-de="Produkte werden von medizinischen Fachleuten strengen Tests unterzogen, um internationale Qualitätsstandards zu erfüllen — ISO 13485, EU MDR 2017/745 und Schweizer Regulierungskonformität."
           data-es="Los productos se someten a pruebas rigurosas por profesionales médicos para cumplir con los estándares de calidad internacionales — ISO 13485, EU MDR 2017/745 y conformidad regulatoria suiza."
@@ -1296,20 +1349,20 @@ footer a{color:var(--accent);}
           data-uk="Продукти проходять суворе тестування медичними фахівцями для відповідності міжнародним стандартам якості — ISO 13485, ЄС MDR 2017/745 та швейцарським нормативним вимогам.">
           Products undergo rigorous testing by medical professionals to meet international quality standards — ISO 13485, EU MDR 2017/745, and Swiss regulatory compliance.
         </p>
-        <div style="display:flex;gap:16px;justify-content:flex-end;flex-wrap:wrap;margin-top:18px;">
-          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 20px;">
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 22px;">
             <div style="font-size:20px;font-weight:800;color:#18b6d6;">ISO</div>
             <div style="font-size:10px;color:#d7e6ff;letter-spacing:1px;">13485</div>
           </div>
-          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 20px;">
+          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 22px;">
             <div style="font-size:20px;font-weight:800;color:#18b6d6;">MDR</div>
             <div style="font-size:10px;color:#d7e6ff;letter-spacing:1px;">EU 2017/745</div>
           </div>
-          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 20px;">
+          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 22px;">
             <div style="font-size:20px;font-weight:800;color:#18b6d6;">CE</div>
             <div style="font-size:10px;color:#d7e6ff;letter-spacing:1px;">Certified</div>
           </div>
-          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 20px;">
+          <div style="text-align:center;background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.3);border-radius:10px;padding:10px 22px;">
             <div style="font-size:20px;font-weight:800;color:#18b6d6;">CH</div>
             <div style="font-size:10px;color:#d7e6ff;letter-spacing:1px;">Swiss Rep</div>
           </div>
@@ -1365,6 +1418,7 @@ footer a{color:var(--accent);}
       <button class="hero-dot" onclick="goToSlide(4)"></button>
       <button class="hero-dot" onclick="goToSlide(5)"></button>
       <button class="hero-dot" onclick="goToSlide(6)"></button>
+      <button class="hero-dot" onclick="goToSlide(7)"></button>
     </div>
   </div>
 
@@ -1468,14 +1522,14 @@ footer a{color:var(--accent);}
     data-uk="Про нас">About Us</h2>
 
   <p class="about-intro"
-    data-en="LifeCare Med Swiss, acting as CH-Rep, manufacturer, and importer, is headquartered in Zug, Switzerland. We are a strategic partner for distributors, importers, dealers, and healthcare professionals worldwide — with a strong focus on quality, efficiency, competitive pricing, and regulatory responsibility to ensure optimal global market access."
-    data-de="LifeCare Med Swiss mit seinen Rollen als CH-Bevollmächtigter, Hersteller und Importeur hat seinen Sitz in Zug, Schweiz. Wir sind ein strategischer Partner von Medizinprodukten für Distributoren, Importeure, Händler und Fachkräfte im Gesundheitswesen mit globalem Fokus auf Qualität, Effizienz und regulatorische Verantwortung."
-    data-es="LifeCare Med Swiss, actuando como representante autorizado en Suiza (CH-Rep), fabricante e importador, tiene su sede en Zug, Suiza. Somos un socio estratégico de dispositivos médicos para distribuidores, importadores, comerciantes y profesionales de la salud a nivel mundial."
-    data-fr="LifeCare Med Swiss, agissant en tant que représentant suisse (CH-Rep), fabricant et importateur, a son siège à Zoug, en Suisse. Nous sommes un partenaire stratégique de dispositifs médicaux pour les distributeurs, importateurs, revendeurs et professionnels de la santé dans le monde entier."
-    data-it="LifeCare Med Swiss, operando come rappresentante svizzero (CH-Rep), produttore e importatore, ha sede a Zugo, Svizzera. Siamo un partner strategico per distributori, importatori, rivenditori e professionisti sanitari in tutto il mondo."
-    data-ru="LifeCare Med Swiss, выступая в качестве уполномоченного представителя в Швейцарии (CH-Rep), производителя и импортера, базируется в Цуге, Швейцария. Мы являемся стратегическим партнером для дистрибьюторов, импортеров и медицинских специалистов по всему миру."
-    data-uk="LifeCare Med Swiss, виступаючи як уповноважений представник у Швейцарії (CH-Rep), виробник та імпортер, базується в Цугу, Швейцарія. Ми є стратегічним партнером для дистриб'юторів, імпортерів та медичних фахівців у всьому світі.">
-    LifeCare Med Swiss, acting as CH-Rep, manufacturer, and importer, is headquartered in Zug, Switzerland. We are a strategic partner for distributors, importers, dealers, and healthcare professionals worldwide — with a strong focus on quality, efficiency, competitive pricing, and regulatory responsibility to ensure optimal global market access.
+    data-en="LifeCare Med Swiss, acting as CH-Rep, manufacturer, and importer, is headquartered in Zug, Switzerland. We are a strategic partner for distributors, importers, dealers, and healthcare professionals worldwide — with a strong focus on quality, efficiency, competitive pricing, and regulatory responsibility to ensure optimal global market access. Through our RegCheck Service, we also support international companies in meeting all regulatory requirements to bring their medical devices to market."
+    data-de="LifeCare Med Swiss mit seinen Rollen als CH-Bevollmächtigter, Hersteller und Importeur hat seinen Sitz in Zug, Schweiz. Wir sind ein strategischer Partner von Medizinprodukten für Distributoren, Importeure, Händler und Fachkräfte im Gesundheitswesen mit globalem Fokus auf Qualität, Effizienz und regulatorische Verantwortung. Mit unserem RegCheck Service unterstützen wir internationale Unternehmen bei der Erfüllung aller regulatorischen Anforderungen, um ihre Produkte in Verkehr zu bringen."
+    data-es="LifeCare Med Swiss, actuando como CH-Rep, fabricante e importador, tiene su sede en Zug, Suiza. Somos un socio estratégico para distribuidores, importadores y profesionales de la salud a nivel mundial. A través de nuestro Servicio RegCheck, también apoyamos a empresas internacionales en el cumplimiento de todos los requisitos regulatorios para comercializar sus dispositivos médicos."
+    data-fr="LifeCare Med Swiss, agissant en tant que CH-Rep, fabricant et importateur, a son siège à Zoug, Suisse. Nous sommes un partenaire stratégique pour les distributeurs, importateurs et professionnels de la santé dans le monde entier. Grâce à notre Service RegCheck, nous accompagnons également les entreprises internationales dans le respect de toutes les exigences réglementaires pour mettre leurs dispositifs médicaux sur le marché."
+    data-it="LifeCare Med Swiss, operando come CH-Rep, produttore e importatore, ha sede a Zugo, Svizzera. Siamo un partner strategico per distributori, importatori e professionisti sanitari in tutto il mondo. Attraverso il nostro Servizio RegCheck, supportiamo anche le aziende internazionali nel rispetto di tutti i requisiti normativi per immettere i loro dispositivi medici sul mercato."
+    data-ru="LifeCare Med Swiss, выступая в качестве CH-Rep, производителя и импортера, базируется в Цуге, Швейцария. Мы являемся стратегическим партнером для дистрибьюторов, импортеров и медицинских специалистов по всему миру. Через наш сервис RegCheck мы также помогаем международным компаниям выполнить все регуляторные требования для вывода медицинских изделий на рынок."
+    data-uk="LifeCare Med Swiss, виступаючи як CH-Rep, виробник та імпортер, базується в Цугу, Швейцарія. Ми є стратегічним партнером для дистриб'юторів, імпортерів та медичних фахівців у всьому світі. Через наш сервіс RegCheck ми також підтримуємо міжнародні компанії у виконанні всіх регуляторних вимог для виведення медичних виробів на ринок.">
+    LifeCare Med Swiss, acting as CH-Rep, manufacturer, and importer, is headquartered in Zug, Switzerland. We are a strategic partner for distributors, importers, dealers, and healthcare professionals worldwide — with a strong focus on quality, efficiency, competitive pricing, and regulatory responsibility to ensure optimal global market access. Through our RegCheck Service, we also support international companies in meeting all regulatory requirements to bring their medical devices to market.
   </p>
 
   <p class="about-roles">CH-Rep &nbsp;|&nbsp; Manufacturer &nbsp;|&nbsp; Importer &nbsp;|&nbsp; Global Distribution Partner</p>
@@ -1492,14 +1546,14 @@ footer a{color:var(--accent);}
         data-ru="Наша Миссия"
         data-uk="Наша Місія">Our Mission</h3>
       <p style="font-size:13.5px; color:#d0e4f7; line-height:1.75; margin:0;"
-        data-en="To provide healthcare professionals and distributors worldwide with premium medical devices — backed by Swiss quality standards, full regulatory compliance, and reliable supply chain management."
-        data-de="Medizinischen Fachleuten und Distributoren weltweit erstklassige Medizinprodukte bereitzustellen — gestützt auf Schweizer Qualitätsstandards, vollständige regulatorische Compliance und zuverlässiges Supply Chain Management."
-        data-es="Proporcionar a los profesionales de la salud y distribuidores de todo el mundo dispositivos médicos de primera calidad, respaldados por los estándares de calidad suizos, el cumplimiento normativo completo y la gestión confiable de la cadena de suministro."
-        data-fr="Fournir aux professionnels de la santé et aux distributeurs du monde entier des dispositifs médicaux haut de gamme — soutenus par les normes de qualité suisses, la pleine conformité réglementaire et une gestion fiable de la chaîne d'approvisionnement."
-        data-it="Fornire a professionisti sanitari e distributori di tutto il mondo dispositivi medici premium — supportati dagli standard di qualità svizzeri, dalla piena conformità normativa e dalla gestione affidabile della catena di approvvigionamento."
-        data-ru="Обеспечивать медицинских специалистов и дистрибьюторов по всему миру первоклассными медицинскими изделиями — подкреплёнными швейцарскими стандартами качества, полным регуляторным соответствием и надёжным управлением цепочкой поставок."
-        data-uk="Забезпечувати медичних фахівців та дистриб'юторів по всьому світу преміальними медичними виробами — підкріпленими швейцарськими стандартами якості, повною регуляторною відповідністю та надійним управлінням ланцюгом постачання.">
-        To provide healthcare professionals and distributors worldwide with premium medical devices — backed by Swiss quality standards, full regulatory compliance, and reliable supply chain management.
+        data-en="To provide healthcare professionals and distributors worldwide with premium medical devices — backed by Swiss quality standards, full regulatory compliance, and reliable supply chain management. We also offer our RegCheck Service to international companies, ensuring they meet all regulatory requirements to successfully bring their products to market."
+        data-de="Medizinischen Fachleuten und Distributoren weltweit erstklassige Medizinprodukte bereitzustellen — gestützt auf Schweizer Qualitätsstandards, vollständige regulatorische Compliance und zuverlässiges Supply Chain Management. Wir bieten internationalen Unternehmen zudem unseren RegCheck Service an, um sicherzustellen, dass sie alle regulatorischen Anforderungen erfüllen und ihre Produkte erfolgreich in Verkehr bringen können."
+        data-es="Proporcionar a los profesionales de la salud y distribuidores de todo el mundo dispositivos médicos de primera calidad. También ofrecemos nuestro Servicio RegCheck a empresas internacionales, garantizando que cumplan todos los requisitos regulatorios para comercializar exitosamente sus productos."
+        data-fr="Fournir aux professionnels de la santé et aux distributeurs du monde entier des dispositifs médicaux haut de gamme. Nous proposons également notre Service RegCheck aux entreprises internationales, en veillant à ce qu'elles respectent toutes les exigences réglementaires pour mettre leurs produits sur le marché avec succès."
+        data-it="Fornire a professionisti sanitari e distributori di tutto il mondo dispositivi medici premium. Offriamo inoltre il nostro Servizio RegCheck alle aziende internazionali, garantendo che soddisfino tutti i requisiti normativi per immettere con successo i loro prodotti sul mercato."
+        data-ru="Обеспечивать медицинских специалистов и дистрибьюторов по всему миру первоклассными медицинскими изделиями. Мы также предлагаем наш сервис RegCheck международным компаниям, помогая им выполнить все регуляторные требования для успешного вывода продуктов на рынок."
+        data-uk="Забезпечувати медичних фахівців та дистриб'юторів по всьому світу преміальними медичними виробами. Ми також пропонуємо наш сервіс RegCheck міжнародним компаніям, гарантуючи виконання всіх регуляторних вимог для успішного виведення їх продуктів на ринок.">
+        To provide healthcare professionals and distributors worldwide with premium medical devices — backed by Swiss quality standards, full regulatory compliance, and reliable supply chain management. We also offer our RegCheck Service to international companies, ensuring they meet all regulatory requirements to successfully bring their products to market.
       </p>
     </div>
 
@@ -1537,6 +1591,7 @@ footer a{color:var(--accent);}
         <li data-en="Management of audits &amp; inspections" data-de="Begleitung von Audits &amp; Inspektionen" data-es="Gestión de auditorías e inspecciones" data-fr="Gestion des audits &amp; inspections" data-it="Gestione di audit e ispezioni" data-ru="Управление аудитами и инспекциями" data-uk="Управління аудитами та інспекціями">Management of audits &amp; inspections</li>
         <li data-en="Management of clinical evaluations &amp; PMS system" data-de="Management von klinischen Bewertungen &amp; PMS-Systemen" data-es="Gestión de evaluaciones clínicas y sistema PMS" data-fr="Gestion des évaluations cliniques &amp; système PMS" data-it="Gestione delle valutazioni cliniche &amp; sistema PMS" data-ru="Управление клиническими оценками и системой PMS" data-uk="Управління клінічними оцінками та системою PMS">Management of clinical evaluations &amp; PMS system</li>
         <li data-en="Market access / registration of medical devices internationally" data-de="Marktzugang / Registrierung von Medizinprodukten international" data-es="Acceso al mercado / registro de productos médicos internacional" data-fr="Accès au marché / enregistrement international de dispositifs médicaux" data-it="Accesso al mercato / registrazione internazionale di dispositivi medici" data-ru="Выход на рынок / регистрация медицинских изделий международно" data-uk="Вихід на ринок / реєстрація медичних виробів міжнародно">Market access / registration of medical devices internationally</li>
+        <li data-en="CH-Rep services for access to the Swiss market" data-de="CH-Rep Dienstleistungen für den Zugang zum Schweizer Markt" data-es="Servicios CH-Rep para el acceso al mercado suizo" data-fr="Services CH-Rep pour l'accès au marché suisse" data-it="Servizi CH-Rep per l'accesso al mercato svizzero" data-ru="Услуги CH-Rep для доступа к рынку Швейцарии" data-uk="Послуги CH-Rep для доступу до ринку Швейцарії">CH-Rep services for access to the Swiss market</li>
       </ul>
     </div>
 
@@ -1559,6 +1614,67 @@ footer a{color:var(--accent);}
       </ul>
     </div>
 
+  </div>
+</section>
+
+<!-- REGCHECK SERVICE SECTION -->
+<section id="regcheck" class="page">
+  <h2 data-en="RegCheck Service" data-de="RegCheck Service" data-es="Servicio RegCheck" data-fr="Service RegCheck" data-it="Servizio RegCheck" data-ru="Сервис RegCheck" data-uk="Сервіс RegCheck">RegCheck Service</h2>
+
+  <p style="text-align:center;max-width:780px;margin:0 auto 36px;line-height:1.8;"
+    data-en="LifeCare Med Swiss offers the RegCheck Service to international companies — supporting them in meeting all regulatory requirements to successfully bring their medical devices to market."
+    data-de="LifeCare Med Swiss bietet internationalen Unternehmen den RegCheck Service an — mit Unterstützung bei der Erfüllung aller regulatorischen Anforderungen, um Medizinprodukte erfolgreich in Verkehr zu bringen."
+    data-es="LifeCare Med Swiss ofrece el Servicio RegCheck a empresas internacionales — apoyándolas en el cumplimiento de todos los requisitos regulatorios para comercializar exitosamente sus dispositivos médicos."
+    data-fr="LifeCare Med Swiss propose le Service RegCheck aux entreprises internationales — en les accompagnant dans le respect de toutes les exigences réglementaires pour mettre leurs dispositifs médicaux sur le marché."
+    data-it="LifeCare Med Swiss offre il Servizio RegCheck alle aziende internazionali — supportandole nel rispetto di tutti i requisiti normativi per immettere con successo i loro dispositivi medici sul mercato."
+    data-ru="LifeCare Med Swiss предлагает сервис RegCheck международным компаниям — помогая им выполнить все регуляторные требования для успешного вывода медицинских изделий на рынок."
+    data-uk="LifeCare Med Swiss пропонує сервіс RegCheck міжнародним компаніям — підтримуючи їх у виконанні всіх регуляторних вимог для успішного виведення медичних виробів на ринок.">
+    LifeCare Med Swiss offers the RegCheck Service to international companies — supporting them in meeting all regulatory requirements to successfully bring their medical devices to market.
+  </p>
+
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:22px;max-width:1000px;margin:0 auto 40px;">
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:28px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;">80%</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Faster Documentation" data-de="Schnellere Dokumentation" data-es="Documentación más rápida" data-fr="Documentation plus rapide" data-it="Documentazione più veloce" data-ru="Более быстрая документация" data-uk="Швидша документація">Faster Documentation</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Creation and maintenance of technical documentation — up to 80% faster than standard processes." data-de="Erstellung und Pflege technischer Dokumentation — bis zu 80 % schneller als Standardprozesse." data-es="Creación y mantenimiento de documentación técnica — hasta un 80 % más rápido que los procesos estándar." data-fr="Création et maintenance de la documentation technique — jusqu'à 80 % plus rapide que les processus standard." data-it="Creazione e manutenzione della documentazione tecnica — fino all'80% più veloce dei processi standard." data-ru="Создание и ведение технической документации — до 80% быстрее стандартных процессов." data-uk="Створення та ведення технічної документації — до 80% швидше стандартних процесів.">Creation and maintenance of technical documentation — up to 80% faster than standard processes.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:28px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;">1 day</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Compliance Check" data-de="Compliance-Prüfung" data-es="Verificación de cumplimiento" data-fr="Vérification de conformité" data-it="Verifica di conformità" data-ru="Проверка соответствия" data-uk="Перевірка відповідності">Compliance Check</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Regulatory compliance check completed within 1 business day — fast, reliable, and fully documented." data-de="Regulatory-Compliance-Prüfung innerhalb von 1 Werktag — schnell, zuverlässig und vollständig dokumentiert." data-es="Verificación de cumplimiento regulatorio completada en 1 día hábil — rápida, confiable y completamente documentada." data-fr="Vérification de conformité réglementaire réalisée en 1 jour ouvrable — rapide, fiable et entièrement documentée." data-it="Verifica di conformità normativa completata in 1 giorno lavorativo — rapida, affidabile e completamente documentata." data-ru="Проверка регуляторного соответствия выполняется за 1 рабочий день — быстро, надёжно и с полной документацией." data-uk="Перевірка регуляторної відповідності виконується протягом 1 робочого дня — швидко, надійно та з повною документацією.">Regulatory compliance check completed within 1 business day — fast, reliable, and fully documented.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">Audit &amp;<br>Inspection</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Full Audit Management" data-de="Vollständiges Audit-Management" data-es="Gestión completa de auditorías" data-fr="Gestion complète des audits" data-it="Gestione completa degli audit" data-ru="Полное управление аудитами" data-uk="Повне управління аудитами">Full Audit Management</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Management of audits, inspections, clinical evaluations, and PMS systems." data-de="Begleitung von Audits, Inspektionen, klinischen Bewertungen und PMS-Systemen." data-es="Gestión de auditorías, inspecciones, evaluaciones clínicas y sistemas PMS." data-fr="Gestion des audits, inspections, évaluations cliniques et systèmes PMS." data-it="Gestione di audit, ispezioni, valutazioni cliniche e sistemi PMS." data-ru="Управление аудитами, инспекциями, клиническими оценками и системами PMS." data-uk="Управління аудитами, інспекціями, клінічними оцінками та системами PMS.">Management of audits, inspections, clinical evaluations, and PMS systems.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">Market<br>Access</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="International Registration" data-de="Internationale Registrierung" data-es="Registro internacional" data-fr="Enregistrement international" data-it="Registrazione internazionale" data-ru="Международная регистрация" data-uk="Міжнародна реєстрація">International Registration</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Market access and registration of medical devices in international markets — ensuring your products reach where they are needed." data-de="Marktzugang und Registrierung von Medizinprodukten in internationalen Märkten — damit Ihre Produkte dort ankommen, wo sie gebraucht werden." data-es="Acceso al mercado y registro de dispositivos médicos en mercados internacionales — para que sus productos lleguen donde se necesitan." data-fr="Accès au marché et enregistrement de dispositifs médicaux sur les marchés internationaux — pour que vos produits parviennent là où ils sont nécessaires." data-it="Accesso al mercato e registrazione di dispositivi medici nei mercati internazionali — per garantire che i vostri prodotti raggiungano dove sono necessari." data-ru="Выход на рынок и регистрация медицинских изделий на международных рынках — чтобы ваши продукты достигали тех, кто в них нуждается." data-uk="Вихід на ринок та реєстрація медичних виробів на міжнародних ринках — щоб ваші продукти досягали тих, хто їх потребує.">Market access and registration of medical devices in international markets — ensuring your products reach where they are needed.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">CH-Rep<br>Services</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Swiss Market Access" data-de="Schweizer Marktzugang" data-es="Acceso al Mercado Suizo" data-fr="Accès au Marché Suisse" data-it="Accesso al Mercato Svizzero" data-ru="Доступ на рынок Швейцарии" data-uk="Доступ до ринку Швейцарії">Swiss Market Access</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="CH-Rep services for access to the Swiss market — acting as your official Swiss Authorised Representative to meet all local regulatory requirements." data-de="CH-Rep Dienstleistungen für den Zugang zum Schweizer Markt — als offizieller Schweizer Bevollmächtigter zur Erfüllung aller lokalen regulatorischen Anforderungen." data-es="Servicios CH-Rep para el acceso al mercado suizo — actuando como su Representante Autorizado Suizo oficial para cumplir todos los requisitos regulatorios locales." data-fr="Services CH-Rep pour l'accès au marché suisse — en agissant comme votre représentant autorisé suisse officiel pour satisfaire toutes les exigences réglementaires locales." data-it="Servizi CH-Rep per l'accesso al mercato svizzero — agendo come vostro Rappresentante Autorizzato Svizzero ufficiale per soddisfare tutti i requisiti normativi locali." data-ru="Услуги CH-Rep для выхода на рынок Швейцарии — в качестве вашего официального уполномоченного представителя в Швейцарии для выполнения всех местных нормативных требований." data-uk="Послуги CH-Rep для доступу до ринку Швейцарії — як ваш офіційний уповноважений представник у Швейцарії для виконання всіх місцевих регуляторних вимог.">CH-Rep services for access to the Swiss market — acting as your official Swiss Authorised Representative to meet all local regulatory requirements.</div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;">
+    <button onclick="openEmailPopup()" style="padding:13px 30px;background:#18b6d6;color:white;border:none;border-radius:8px;cursor:pointer;font-weight:700;font-size:15px;font-family:'Montserrat',sans-serif;"
+      data-en="Contact us for RegCheck"
+      data-de="RegCheck anfragen"
+      data-es="Contáctenos para RegCheck"
+      data-fr="Contactez-nous pour RegCheck"
+      data-it="Contattaci per RegCheck"
+      data-ru="Связаться по RegCheck"
+      data-uk="Зв'язатися щодо RegCheck">Contact us for RegCheck</button>
   </div>
 </section>
 
@@ -1654,6 +1770,7 @@ footer a{color:var(--accent);}
       <li>Certificate of Origin (COO)</li>
       <li>Certificate of Analysis (CoA)</li>
       <li>Certificate of Conformity (CoC)</li>
+      <li data-en="CH-Rep Services — Swiss Market Access" data-de="CH-Rep Dienstleistungen — Schweizer Marktzugang" data-es="Servicios CH-Rep — Acceso al Mercado Suizo" data-fr="Services CH-Rep — Accès au Marché Suisse" data-it="Servizi CH-Rep — Accesso al Mercato Svizzero" data-ru="Услуги CH-Rep — Доступ на рынок Швейцарии" data-uk="Послуги CH-Rep — Доступ до ринку Швейцарії">CH-Rep Services — Swiss Market Access</li>
     </ul>
 
     <div style="text-align:center;margin-top:28px;">
