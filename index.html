@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="oS1ItvRLWHabX0-y-PVjNKpgG-1ZctljPFPiPka-g18" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeCare Med Swiss – Medical Device Sourcing &amp; Regulatory Services, Switzerland</title>
+<meta name="description" content="LifeCare Med Swiss, Switzerland: sourcing of medical devices not yet available in your market or that you cannot procure (urology, gastroenterology, gynaecology) and regulatory services for medical device manufacturers (RegCheck, MDR, CH-Rep).">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LifeCare Med Swiss – Medical Device Sourcing &amp; Regulatory Services">
+<meta property="og:description" content="LifeCare Med Swiss, Switzerland: sourcing of medical devices not yet available in your market or that you cannot procure (urology, gastroenterology, gynaecology) and regulatory services for medical device manufacturers (RegCheck, MDR, CH-Rep).">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "LifeCare Med Swiss", "description": "LifeCare Med Swiss, Switzerland: sourcing of medical devices not yet available in your market or that you cannot procure (urology, gastroenterology, gynaecology) and regulatory services for medical device manufacturers (RegCheck, MDR, CH-Rep).", "address": {"@type": "PostalAddress", "streetAddress": "Neuhausweg 3", "postalCode": "8712", "addressLocality": "Stäfa", "addressCountry": "CH"}, "knowsAbout": ["Medical device sourcing", "Urology", "Gastroenterology", "Gynaecology", "Regulatory affairs", "EU MDR", "Medical device market access"]}</script>
+<style>
+:root{
+  --primary:#0b2a4a;
+  --secondary:#003a70;
+  --accent:#18b6d6;
+  --bg:#071a2f;
+  --card:#ffffff;
+  --text:#e8f1ff;
+  --muted:#d7e6ff;
+  --shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+*{box-sizing:border-box;}
+
+html, body{
+  overflow-x:hidden;
+  width:100%;
+  max-width:100%;
+}
+
+body{
+  font-family:'Open Sans',Arial,sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#0b2a4a;
+}
+
+html{scroll-behavior:smooth;}
+
+/* ===== LANG BAR ===== */
+.lang-bar{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:8px 24px;
+  background:var(--primary);
+  color:white;
+  gap:6px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2000;
+}
+
+.lang-bar button{
+  padding:5px 11px;
+  border:1.5px solid rgba(255,255,255,0.25);
+  cursor:pointer;
+  border-radius:5px;
+  background:transparent;
+  color:white;
+  font-weight:600;
+  font-size:12px;
+  transition:all 0.2s;
+  font-family:'Montserrat',sans-serif;
+  letter-spacing:0.5px;
+}
+
+.lang-bar button:hover{
+  background:var(--accent);
+  border-color:var(--accent);
+}
+
+.lang-bar button.active{
+  background:var(--accent);
+  color:white;
+  border-color:var(--accent);
+}
+
+/* ===== LOGO BAR ===== */
+.logo-bar{
+  display:flex;
+  align-items:center;
+  padding:14px 32px;
+  background:linear-gradient(90deg,var(--primary),var(--secondary));
+  border-bottom:2px solid var(--accent);
+  width:100%;
+  box-sizing:border-box;
+}
+
+.logo-text{
+  display:flex;
+  flex-direction:column;
+}
+
+.logo-name{
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;
+  font-size:22px;
+  color:#fff;
+  letter-spacing:0.5px;
+  line-height:1.1;
+}
+
+.logo-sub{
+  font-family:'Montserrat',sans-serif;
+  font-size:11px;
+  color:var(--accent);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-weight:600;
+  margin-top:2px;
+}
+
+/* ===== NAV ===== */
+nav{
+  background:linear-gradient(90deg,#0e3460,var(--secondary));
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:0 40px;
+  width:100%;
+  box-sizing:border-box;
+  position:relative;
+  overflow:visible;
+  z-index:1000;
+  min-height:56px;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4px;
+  width:100%;
+  max-width:1300px;
+  margin:auto;
+  list-style:none;
+  padding:0;
+  flex-wrap:wrap;
+}
+
+nav li{position:relative;}
+
+nav a{
+  color:rgba(255,255,255,0.88);
+  text-decoration:none;
+  font-weight:600;
+  padding:16px 13px;
+  display:inline-block;
+  font-size:13.5px;
+  font-family:'Montserrat',sans-serif;
+  letter-spacing:0.3px;
+  transition:color 0.2s;
+}
+
+nav a:hover{color:var(--accent);}
+
+/* ===== MEGA MENU ===== */
+.menu-item{position:relative;}
+
+.mega-menu{
+  display:grid;
+  visibility:hidden;
+  opacity:0;
+  transform:translateY(-8px);
+  pointer-events:none;
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translateX(-50%) translateY(-8px);
+  width:980px;
+  background:white;
+  z-index:9999;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  padding:0;
+  box-shadow:0 20px 60px rgba(0,0,0,0.22),0 4px 20px rgba(11,42,74,0.12);
+  border-radius:12px;
+  overflow:hidden;
+  transition:opacity 0.25s ease,transform 0.25s ease,visibility 0s linear 0.25s;
+}
+
+.menu-item:hover .mega-menu{
+  visibility:visible;
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+  pointer-events:auto;
+  transition:opacity 0.25s ease,transform 0.25s ease,visibility 0s linear 0s;
+}
+
+.mega-column{
+  min-width:0;
+  padding:24px 20px;
+  border-right:1px solid #f0f4f8;
+  overflow-y:auto;
+  max-height:75vh;
+}
+
+.mega-column:last-child{border-right:none;}
+
+.mega-column h3{
+  color:#0b2a4a;
+  margin:0 0 14px 0;
+  font-size:14px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  border-bottom:2px solid #18b6d6;
+  padding-bottom:8px;
+  position:sticky;
+  top:0;
+  background:white;
+  z-index:1;
+  font-family:'Montserrat',sans-serif;
+}
+
+/* ===== SUBCAT STYLES ===== */
+.subcat{margin-bottom:14px;}
+
+.subcat h4{
+  color:#0b2a4a;
+  font-size:11px;
+  margin:10px 0 5px 0;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:0.8px;
+  padding:4px 8px;
+  background:linear-gradient(90deg,#e8f4ff,transparent);
+  border-left:3px solid #18b6d6;
+  border-radius:0 4px 4px 0;
+  cursor:default;
+  font-family:'Montserrat',sans-serif;
+}
+
+.subcat a{
+  display:block;
+  color:#444;
+  font-size:12px;
+  padding:4px 8px 4px 14px;
+  text-decoration:none;
+  border-radius:4px;
+  transition:all 0.18s ease;
+  position:relative;
+  cursor:pointer;
+}
+
+.subcat a::before{
+  content:'›';
+  position:absolute;
+  left:4px;
+  color:#ccc;
+  transition:color 0.18s;
+}
+
+.subcat a:hover{
+  color:#18b6d6;
+  background:#f0fafd;
+  padding-left:18px;
+}
+
+.subcat a:hover::before{color:#18b6d6;}
+
+/* ===== HERO ===== */
+.hero{
+  background:radial-gradient(circle at top,#0b2a4a 0%,#071a2f 100%);
+  text-align:center;
+  padding:0;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Hero Slideshow */
+.hero-slideshow{
+  position:relative;
+  width:100%;
+  height:clamp(580px, 70vh, 700px);
+  overflow:hidden;
+}
+
+.hero-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity 1.2s ease;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-slide.active{opacity:1;}
+
+.hero-slide-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(7,26,47,0.82),rgba(11,42,74,0.7));
+}
+
+.hero-slide-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:30px 20px;
+  max-width:900px;
+}
+
+.hero-slide-content h1{
+  font-family:'Montserrat',sans-serif;
+  font-size:42px;
+  font-weight:800;
+  color:#ffffff;
+  letter-spacing:1px;
+  margin:0 0 12px 0;
+  line-height:1.15;
+}
+
+.hero-slide-content p{
+  color:#d7e6ff;
+  font-size:16px;
+  margin:0 0 20px 0;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hero-dots{
+  position:absolute;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:8px;
+  z-index:10;
+}
+
+.hero-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.35);
+  cursor:pointer;
+  transition:background 0.3s;
+  border:none;
+}
+
+.hero-dot.active{background:var(--accent);}
+
+/* KEY FACTS */
+.key-facts{
+  display:flex;
+  justify-content:center;
+  gap:0;
+  background:linear-gradient(90deg,#0b2a4a,#0e3460,#0b2a4a);
+  border-top:2px solid var(--accent);
+  flex-wrap:wrap;
+}
+
+.key-fact{
+  flex:1;
+  min-width:160px;
+  text-align:center;
+  padding:22px 16px;
+  border-right:1px solid rgba(24,182,214,0.2);
+  transition:background 0.25s;
+}
+
+.key-fact:last-child{border-right:none;}
+
+.key-fact:hover{background:rgba(24,182,214,0.1);}
+
+.key-fact-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:28px;
+  font-weight:800;
+  color:var(--accent);
+  line-height:1;
+}
+
+.key-fact-label{
+  font-size:11px;
+  color:#d7e6ff;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-top:5px;
+  font-weight:600;
+}
+
+/* Hero contact buttons */
+.hero-contact-btns{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+/* ===== SECTIONS ===== */
+.page{
+  display:none;
+  opacity:0;
+  transform:translateY(10px);
+  transition:all 0.35s ease;
+}
+
+.page.active{
+  display:block;
+  opacity:1;
+  transform:translateY(0);
+}
+
+section{
+  padding:70px 20px;
+  background:radial-gradient(circle at top,#0b2a4a 0%,#071a2f 100%);
+  color:#e8f1ff;
+  min-height:100vh;
+}
+
+h2{
+  text-align:center;
+  color:#ffffff;
+  margin-bottom:30px;
+  font-size:28px;
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;
+}
+
+section p,section li{color:#d7e6ff;}
+
+/* Products section */
+#products h2,#products p{text-align:center;}
+
+/* VIDEO Section */
+#video{text-align:center; padding:60px 20px;}
+
+/* ===== ABOUT US ===== */
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  max-width:1100px;
+  margin:0 auto 40px;
+}
+
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;}}
+
+.about-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(24,182,214,0.2);
+  border-radius:14px;
+  padding:28px;
+}
+
+.about-card h3{
+  font-family:'Montserrat',sans-serif;
+  font-size:15px;
+  font-weight:800;
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin:0 0 14px 0;
+  border-bottom:1px solid rgba(24,182,214,0.25);
+  padding-bottom:8px;
+}
+
+.about-card ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.about-card ul li{
+  color:#d0e4f7;
+  font-size:13.5px;
+  padding:5px 0 5px 18px;
+  position:relative;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+
+.about-card ul li::before{
+  content:'✓';
+  position:absolute;
+  left:0;
+  color:var(--accent);
+  font-weight:700;
+}
+
+/* ===== PRODUCTS PAGE – CARD GRID ===== */
+.prod-catalog{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 20px 60px;
+}
+
+.prod-main-cat{margin-bottom:56px;}
+
+.prod-main-cat>h2{
+  font-size:18px;
+  color:white;
+  font-weight:800;
+  background:linear-gradient(90deg,var(--accent),#0b8aaa);
+  padding:12px 22px;
+  border-radius:8px;
+  margin-bottom:28px;
+  text-align:left;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.prod-subcat{margin-bottom:32px;}
+
+.prod-subcat h3{
+  font-size:12px;
+  color:#e8f1ff;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.8px;
+  padding:7px 14px;
+  background:rgba(24,182,214,0.13);
+  border-left:3px solid #18b6d6;
+  border-radius:0 6px 6px 0;
+  margin-bottom:16px;
+  display:inline-block;
+}
+
+/* Card grid */
+.prod-card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(155px,1fr));
+  gap:12px;
+}
+
+.prod-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(24,182,214,0.18);
+  border-radius:10px;
+  padding:0;
+  cursor:pointer;
+  transition:all 0.2s ease;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+.prod-card:hover{
+  border-color:var(--accent);
+  background:rgba(24,182,214,0.1);
+  transform:translateY(-3px);
+  box-shadow:0 8px 28px rgba(24,182,214,0.2);
+}
+
+.prod-card-img{
+  width:100%;
+  aspect-ratio:1;
+  object-fit:contain;
+  background:#fff;
+  border-radius:0;
+  display:block;
+  padding:10px;
+}
+
+.prod-card-name{
+  font-size:11.5px;
+  color:#d0e4f7;
+  text-align:center;
+  padding:8px 10px;
+  line-height:1.35;
+  font-weight:600;
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.prod-card:hover .prod-card-name{color:#18b6d6;}
+
+/* Rotate animation for slide 5 */
+@keyframes rotateSlow{from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+
+/* Language selector dropdown style */
+.lang-bar{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:6px 20px;
+  background:var(--primary);
+  color:white;
+  gap:4px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2000;
+}
+
+.lang-bar button{
+  padding:4px 10px;
+  border:1.5px solid rgba(255,255,255,0.2);
+  cursor:pointer;
+  border-radius:4px;
+  background:transparent;
+  color:rgba(255,255,255,0.75);
+  font-weight:600;
+  font-size:11.5px;
+  transition:all 0.18s;
+  font-family:'Montserrat',sans-serif;
+  letter-spacing:0.5px;
+}
+
+.lang-bar button:hover{
+  background:rgba(24,182,214,0.2);
+  color:white;
+  border-color:rgba(24,182,214,0.5);
+}
+
+.lang-bar button.active{
+  background:var(--accent);
+  color:white;
+  border-color:var(--accent);
+}
+
+.lang-label{
+  font-size:11px;
+  color:rgba(255,255,255,0.4);
+  font-family:'Montserrat',sans-serif;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-right:4px;
+}
+
+/* Hero slideshow height */
+.hero-slideshow{
+  position:relative;
+  width:100%;
+  height:540px;
+  overflow:hidden;
+}
+
+@media(max-width:768px){
+  .hero-slideshow{height:480px;}
+  .prod-card-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;}
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  justify-content:center;
+  align-items:center;
+  z-index:99999;
+  background:transparent;
+}
+
+.lightbox.active{
+  display:flex;
+  background:rgba(5,15,30,0.92);
+  backdrop-filter:blur(6px);
+}
+
+.lightbox-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(5,15,30,0.88);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  transition:opacity 0.3s ease;
+}
+
+.lightbox-content{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#lightbox-img{
+  max-width:88vw;
+  max-height:85vh;
+  border-radius:14px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.6);
+  transform:scale(0.88);
+  opacity:0;
+  transition:transform 0.32s cubic-bezier(0.34,1.56,0.64,1),opacity 0.28s ease;
+}
+
+.lightbox.active #lightbox-img{transform:scale(1);opacity:1;}
+
+#lightbox-img.zoomed{transform:scale(1.35) !important;cursor:zoom-out;}
+
+.lightbox .close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+  z-index:3;
+}
+
+/* Hover Image Tooltip */
+.prod-hover-img{
+  position:fixed;
+  pointer-events:none;
+  z-index:99990;
+  opacity:0;
+  transform:scale(0.88);
+  transition:opacity 0.18s ease,transform 0.18s cubic-bezier(0.34,1.2,0.64,1);
+  border-radius:10px;
+  background:white;
+  padding:6px;
+  box-shadow:0 12px 40px rgba(0,0,0,0.35);
+}
+
+.prod-hover-img.visible{opacity:1;transform:scale(1);}
+
+.prod-hover-img img{
+  width:200px;
+  height:150px;
+  object-fit:contain;
+  border-radius:6px;
+  background:#f4f7fb;
+  display:block;
+}
+
+/* Popup */
+.popup-box{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  max-width:400px;
+  width:90%;
+}
+
+.popup-box button{
+  padding:10px 16px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  margin:4px;
+}
+
+/* ===== REGULATORY ===== */
+#regulatory\ documents .reg-center{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.reg-doc-list{
+  list-style:none;
+  padding:0;
+  margin:20px auto;
+  max-width:500px;
+  text-align:center;
+}
+
+.reg-doc-list li{
+  padding:8px 0;
+  font-size:15px;
+  font-weight:600;
+  color:#d7e6ff;
+}
+
+/* ===== AWARD ===== */
+.award-box{
+  background:linear-gradient(135deg,rgba(24,182,214,0.12),rgba(11,42,74,0.3));
+  border:1px solid rgba(24,182,214,0.3);
+  border-radius:14px;
+  padding:30px;
+  max-width:700px;
+  margin:30px auto 0;
+  text-align:center;
+}
+
+.award-box h3{
+  font-family:'Montserrat',sans-serif;
+  color:var(--accent);
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  line-height:2;
+  border-top:2px solid var(--accent);
+}
+
+footer a{color:var(--accent);}
+
+/* Cookie banner */
+#cookieBanner{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#0b2a4a;
+  color:white;
+  padding:15px 20px;
+  text-align:center;
+  z-index:9999;
+  font-size:13px;
+  border-top:2px solid var(--accent);
+}
+
+#cookieBanner button{
+  margin-left:12px;
+  padding:6px 16px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* highlight */
+.highlight{font-weight:700;color:#18b6d6;}
+
+/* VIDEO in section */
+.video-embed{max-width:900px;width:100%;border-radius:12px;}
+
+/* Career */
+#career p{text-align:center; max-width:800px; margin:0 auto;}
+
+/* Catalog */
+#catalog p{text-align:center;}
+
+/* About us main intro */
+.about-intro{
+  text-align:center;
+  max-width:860px;
+  margin:0 auto 32px;
+  font-size:15px;
+  line-height:1.8;
+  color:#d7e6ff;
+}
+
+.about-roles{
+  text-align:center;
+  margin:0 auto 30px;
+  color:#18b6d6;
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:0.5px;
+}
+
+/* ===== HERO PRODUCT STRIP ===== */
+.hero-manish-strip{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:18px 20px;
+  background:rgba(11,42,74,0.85);
+  border-top:1px solid rgba(24,182,214,0.2);
+}
+
+.hero-manish-strip img{
+  height:90px;
+  border-radius:8px;
+  object-fit:cover;
+  cursor:pointer;
+  transition:transform 0.25s,box-shadow 0.25s;
+  background:#fff;
+}
+
+.hero-manish-strip img:hover{
+  transform:scale(1.08);
+  box-shadow:0 8px 30px rgba(24,182,214,0.4);
+}
+
+/* ===== PRODUCTS BEFORE VIDEO NAV LINK === */
+/* already ordered in HTML */
+
+@media(max-width:900px){
+  .mega-menu{width:98vw;left:0;transform:none;}
+  .menu-item:hover .mega-menu{transform:translateY(0);}
+  .hero-slide-content h1{font-size:28px;}
+  nav ul{gap:2px;}
+  nav a{padding:12px 9px;font-size:12px;}
+  .key-facts{gap:0;}
+  .key-fact{min-width:130px;}
+}
+</style>
+<style>
+.fp-grid{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;max-width:980px;margin:0 auto;}
+.fp-tile{flex:1 1 260px;min-height:220px;border-radius:14px;overflow:hidden;background-color:#0b2a4a;background-size:cover;background-position:center;position:relative;}
+.fp-glass{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;color:#fff;background:rgba(7,26,47,0.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+.fp-glass h3{margin:6px 0;font-size:20px;}.fp-glass p{margin:0;font-size:13px;opacity:.9;}.fp-lock{font-size:26px;}
+.fp-small{flex:0 0 150px;min-height:120px;cursor:pointer;}
+</style>
+<style>
+.prod-card{position:relative;min-height:150px;background:linear-gradient(135deg,rgba(24,182,214,0.28),rgba(255,255,255,0.14)) !important;}
+.prod-card-img,.prod-hover-img img,#lightbox-img{filter:blur(14px) saturate(.75);}
+.prod-card::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;background:rgba(255,255,255,0.10);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);}
+.prod-card-name{position:relative;z-index:3;}
+</style>
+<style>
+.sourcing-band{max-width:900px;margin:0 auto;padding:36px 24px 44px;text-align:center;}
+.sourcing-band h2{margin:0 0 14px 0;font-size:24px;}
+.sourcing-band p{margin:0;font-size:16px;line-height:1.8;color:#d7e6ff;}
+</style>
+</head>
+<body>
+
+<!-- LANGUAGE BAR (top right) -->
+<div class="lang-bar">
+  <span class="lang-label">🌐 Lang:</span>
+  <button onclick="setLang('de')" data-langbtn="de">DE</button>
+  <button onclick="setLang('en')" data-langbtn="en">EN</button>
+  <button onclick="setLang('es')" data-langbtn="es">ES</button>
+  <button onclick="setLang('fr')" data-langbtn="fr">FR</button>
+  <button onclick="setLang('it')" data-langbtn="it">IT</button>
+  <button onclick="setLang('ru')" data-langbtn="ru">RU</button>
+  <button onclick="setLang('uk')" data-langbtn="uk">UA</button>
+</div>
+
+<!-- LOGO BAR -->
+<div class="logo-bar" style="justify-content:space-between;">
+  <div class="logo-text">
+    <span class="logo-name">LifeCare Med Swiss</span>
+    <span class="logo-sub">Medical Devices &nbsp;·&nbsp; Precision &nbsp;·&nbsp; Switzerland</span>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <button onclick="openWhatsAppPopup()" style="padding:8px 18px;border:none;border-radius:7px;background:#25D366;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:13px;display:flex;align-items:center;gap:6px;">📱 WhatsApp</button>
+    <button onclick="openEmailPopup()" style="padding:8px 18px;border:1.5px solid rgba(255,255,255,0.35);border-radius:7px;background:transparent;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:13px;display:flex;align-items:center;gap:6px;">📧 Email</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar">
+  <ul>
+
+    <li><a href="javascript:void(0)" onclick="showSection('home')"
+       data-en="Home" data-de="Start" data-es="Inicio" data-fr="Accueil" data-it="Home" data-ru="Главная" data-uk="Головна">Home</a></li>
+
+    <li><a href="javascript:void(0)" onclick="showSection('about us')"
+       data-en="About Us" data-de="Über uns" data-es="Sobre nosotros" data-fr="À propos" data-it="Chi siamo" data-ru="О нас" data-uk="Про нас">About Us</a></li>
+
+
+    <!-- Products BEFORE Video, with mega-menu on hover -->
+    <li class="menu-item">
+      <a href="javascript:void(0)" onclick="showSection('products')" style="cursor:pointer;"
+         data-en="Products ▾" data-de="Produkte ▾" data-es="Productos ▾" data-fr="Produits ▾" data-it="Prodotti ▾" data-ru="Продукты ▾" data-uk="Продукти ▾">Products ▾</a>
+
+      <div class="mega-menu">
+
+        <!-- UROLOGY -->
+        <div class="mega-column">
+          <h3 data-en="Urology" data-de="Urologie" data-es="Urología" data-fr="Urologie" data-it="Urologia" data-ru="Урология" data-uk="Урологія">Urology</h3>
+
+          <div class="subcat">
+            <h4 data-en="Access Products" data-de="Zugangsprodukte" data-es="Prod. de acceso" data-fr="Prod. d'accès" data-it="Prod. di accesso" data-ru="Продукты доступа" data-uk="Продукти доступу">Access Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture3_Ureteric_Catheter.jpg">Ureteric Catheter</a>
+            <a href="#" class="menu-link" data-img="images/Picture4_Ureteral_Access_Sheath.jpg">Ureteral Access Sheath</a>
+            <a href="#" class="menu-link" data-img="images/Picture5_Chiba_Needle.jpg">Chiba Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture6_Introducer_Needle.jpg">Introducer Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture7_IP_Needle.jpg">I.P Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture61_HydrophilicGuidewire.jpg">Hydro Tip Guide Wire</a>
+            <a href="#" class="menu-link" data-img="images/Picture9_Hydrophilic_Guidewire.jpg">Hydrophilic Guide Wire</a>
+            <a href="#" class="menu-link" data-img="images/Picture10_Lunderquist_Guidewire.jpg">Lunderquist Guide Wire</a>
+            <a href="#" class="menu-link" data-img="images/Picture11_PTFE_Guidewire.jpg">PTFE Guide Wire (SS)</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Accessories" data-de="Zubehör" data-es="Accesorios" data-fr="Accessoires" data-it="Accessori" data-ru="Аксессуары" data-uk="Аксесуари">Accessories</h4>
+            <a href="#" class="menu-link" data-img="images/Picture12_EEC.jpg">Evacuator (Bladder Evacuator/EEC)</a>
+            <a href="#" class="menu-link" data-img="images/Picture13_Pathfinder.jpg">Pathfinder (Track Finder)</a>
+            <a href="#" class="menu-link" data-img="images/Picture14_Penile_Clamp.jpg">Penile Clamp</a>
+            <a href="#" class="menu-link" data-img="images/Picture15_TurSet.jpg">TUR Set</a>
+            <a href="#" class="menu-link" data-img="images/Picture16_CystoBridge.jpg">Cysto Bridge</a>
+            <a href="#" class="menu-link" data-img="images/Picture17_TurpSet.jpg">TURP-Set</a>
+            <a href="#" class="menu-link" data-img="images/Picture18_Bugbee_Electrode.jpg">Bugbee Electrodes</a>
+            <a href="#" class="menu-link" data-img="images/Picture19_TurpElectrode.jpg">TURP Loops And Electrodes</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Dilation Products" data-de="Dilationsprodukte" data-es="Prod. de dilatación" data-fr="Prod. de dilatation" data-it="Prod. di dilatazione" data-ru="Дилатация" data-uk="Дилатація">Dilation Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture21_AmplatzDilator.jpg">Amplatz Renal Dilator Kit</a>
+            <a href="#" class="menu-link" data-img="images/Picture22_FascialDilator.jpg">Fascial Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture23_FiliformDilator.jpg">Filiform Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture24_MeatalDilator.jpg">Meatal Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture25_MetalTelescopicDilator.jpg">Metal Telescopic Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture26_NephrotrackBalloon.jpg">Nephrotrac Balloon Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture27_Nottingham_One.jpg">Nottingham One-Step Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture28_Screw_Dilator.jpg">Screw Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture29_UreteralBalloonDilator.jpg">Ureteral Balloon Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture30_UreteralDilator.jpg">Ureteral Dilator Set</a>
+            <a href="#" class="menu-link" data-img="images/Picture31_UrethralDilator.jpg">Urethral Dilator</a>
+            <a href="#" class="menu-link" data-img="images/Picture32_SShapeDilator.jpg">S Shape Dilator</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Drainage Products" data-de="Drainageprodukte" data-es="Prod. de drenaje" data-fr="Prod. de drainage" data-it="Prod. di drenaggio" data-ru="Дренаж" data-uk="Дренаж">Drainage Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture33_FoleyBalloonCat.jpg">Foley Balloon Catheter</a>
+            <a href="#" class="menu-link" data-img="images/Picture34_NephrostomyDrainage.jpg">Nephrostomy Drainage Kit (Pigtail)</a>
+            <a href="#" class="menu-link" data-img="images/Picture35_MalecotNephros.jpg">Malecot Nephrostomy Kit</a>
+            <a href="#" class="menu-link" data-img="images/Picture36_NephrostomyTube.jpg">Nephrostomy Tube</a>
+            <a href="#" class="menu-link" data-img="images/Picture37_Percutaneous_Nephro.jpg">Percutaneous Nephrostomy Drainage Catheter</a>
+            <a href="#" class="menu-link" data-img="images/Picture42_SuprapubicMalecotCatheter.jpg">Suprapubic Malecot Catheter</a>
+            <a href="#" class="menu-link" data-img="images/Picture43_Suprapubic_Cystostomy.jpg">Suprapubic Cystostomy Kit</a>
+            <a href="#" class="menu-link" data-img="images/Picture45_Ureteral_DJS_Pullingstring.jpg">Ureteral Double J Stent with Pulling String</a>
+            <a href="#" class="menu-link" data-img="images/Picture46_DJS.jpg">Double J Stent</a>
+            <a href="#" class="menu-link" data-img="images/Picture47_UrethralStent.jpg">Urethral Stent</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Stone Management" data-de="Steinmanagement" data-es="Gestión de cálculos" data-fr="Gestion des calculs" data-it="Gestione calcoli" data-ru="Камни" data-uk="Камені">Stone Management</h4>
+            <a href="#" class="menu-link" data-img="images/Picture48_BiopsyForceps.jpg">Biopsy Forceps</a>
+            <a href="#" class="menu-link" data-img="images/Picture49_GraspingForceps.jpg">Grasping Forceps</a>
+            <a href="#" class="menu-link" data-img="images/Picture53_StoneRetrievalBasket.jpg">Stone Retrieval Basket</a>
+            <a href="#" class="menu-link" data-img="images/Picture54_StoneBasket.jpg">Stone Basket</a>
+            <a href="#" class="menu-link" data-img="images/Picture56_StoneRetrievalBasket.jpg">Stone Retrieval Basket (Nitinol)</a>
+          </div>
+        </div>
+
+        <!-- GASTROENTEROLOGY -->
+        <div class="mega-column">
+          <h3 data-en="Gastroenterology" data-de="Gastroenterologie" data-es="Gastroenterología" data-fr="Gastroentérologie" data-it="Gastroenterologia" data-ru="Гастроэнтерология" data-uk="Гастроентерологія">Gastroenterology</h3>
+
+          <div class="subcat">
+            <h4 data-en="Drainage Products" data-de="Drainageprodukte" data-es="Prod. de drenaje" data-fr="Prod. de drainage" data-it="Prod. di drenaggio" data-ru="Дренаж" data-uk="Дренаж">Drainage Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture83_BiliaryStent_Gastro.jpg">Biliary Stents – Standard</a>
+            <a href="#" class="menu-link" data-img="images/Picture84_BiliaryStentAmsterdam_Gastro.jpg">Biliary Stents – Amsterdam</a>
+            <a href="#" class="menu-link" data-img="images/Picture85_BiliaryStentSinglePigtail_Gastro.jpg">Biliary Stents – Single Pigtail</a>
+            <a href="#" class="menu-link" data-img="images/Picture86_BiliaryStentDoublePigtail_Gastro.jpg">Biliary Stents – Double Pigtail</a>
+            <a href="#" class="menu-link" data-img="images/Picture87_BiliaryStentStraight_Gastro.jpg">Biliary Stents – Straight</a>
+            <a href="#" class="menu-link" data-img="images/Picture88_BiliaryStentPancreatic_Gastro.jpg">Biliary Stents – Pancreatic</a>
+            <a href="#" class="menu-link" data-img="images/Picture89_NasoBiliaryDrainC_Gastro.jpg">Naso Biliary Drainage Catheter (NBDC)</a>
+            <a href="#" class="menu-link" data-img="images/Picture90_Abscess_DrainageSet_Pigtail_Gastro.jpg">Abscess Drainage Sets – Pigtail</a>
+            <a href="#" class="menu-link" data-img="images/Picture91_Abscess_DrainSet_MalecotType_Gastro.jpg">Abscess Drainage Sets – Malecot</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Access Products" data-de="Zugangsprodukte" data-es="Prod. de acceso" data-fr="Prod. d'accès" data-it="Prod. di accesso" data-ru="Продукты доступа" data-uk="Продукти доступу">Access Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture92_IPNNeedle_Gastro.jpg">I.P Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture93_ChibaNeedle_Gastro.jpg">Chiba Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture94_IntroducerNeedle_Gastro.jpg">Introducer Needle</a>
+            <a href="#" class="menu-link" data-img="images/Picture8_Hydro_Twist_Guidewire.jpg">Hydro Tip Guide Wire</a>
+            <a href="#" class="menu-link" data-img="images/Picture96_Hydrophilic_Guidewire_Gastro.jpg">Hydrophilic Guide Wire</a>
+            <a href="#" class="menu-link" data-img="images/Picture97_PTFE_Guidewire_Gastro.jpg">PTFE Guide Wire (SS)</a>
+            <a href="#" class="menu-link" data-img="images/Picture98_SclerotherapyNeedle_Gastro.jpg">Sclerotherapy Needle</a>
+          </div>
+
+          <div class="subcat">
+            <h4 data-en="Accessories" data-de="Zubehör" data-es="Accesorios" data-fr="Accessoires" data-it="Accessori" data-ru="Аксессуары" data-uk="Аксесуари">Accessories</h4>
+            <a href="#" class="menu-link" data-img="images/Picture99_BiteBlock_Gastro.jpg">Bite Block</a>
+            <a href="#" class="menu-link" data-img="images/Picture100_CleaningBrush_Gastro.jpg">Cleaning Brush</a>
+            <a href="#" class="menu-link" data-img="images/Picture101_ColonoscopyPants_Gastro.jpg">Colonoscopy Pants</a>
+          </div>
+        </div>
+
+        <!-- GYNAECOLOGY -->
+        <div class="mega-column">
+          <h3 data-en="Gynaecology" data-de="Gynäkologie" data-es="Ginecología" data-fr="Gynécologie" data-it="Ginecologia" data-ru="Гинекология" data-uk="Гінекологія">Gynaecology</h3>
+
+          <div class="subcat">
+            <h4 data-en="Access Products" data-de="Zugangsprodukte" data-es="Prod. de acceso" data-fr="Prod. d'accès" data-it="Prod. di accesso" data-ru="Продукты доступа" data-uk="Продукти доступу">Access Products</h4>
+            <a href="#" class="menu-link" data-img="images/Picture103_IUI_Gynaecology.jpg">IUI</a>
+            <a href="#" class="menu-link" data-img="images/Picture102_Gynaecology.jpg">Gynaecology Set</a>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <li><a href="javascript:void(0)" onclick="showSection('regcheck')"
+       data-en="RegCheck Service" data-de="RegCheck Service" data-es="Servicio RegCheck" data-fr="Service RegCheck" data-it="Servizio RegCheck" data-ru="Сервис RegCheck" data-uk="Сервіс RegCheck">RegCheck Service</a></li>
+
+    <li><a href="javascript:void(0)" onclick="showSection('video')"
+       data-en="Videos" data-de="Videos" data-es="Videos" data-fr="Vidéos" data-it="Video" data-ru="Видео" data-uk="Відео">Videos</a></li>
+
+    <li><a href="javascript:void(0)" onclick="showSection('career')"
+       data-en="Career" data-de="Karriere" data-es="Carrera" data-fr="Carrière" data-it="Carriera" data-ru="Карьера" data-uk="Кар'єра">Career</a></li>
+
+    <li><a href="javascript:void(0)" onclick="showSection('catalog')"
+       data-en="Catalog" data-de="Katalog" data-es="Catálogo" data-fr="Catalogue" data-it="Catalogo" data-ru="Каталог" data-uk="Каталог">Catalog</a></li>
+
+  </ul>
+</nav>
+
+<!-- HERO (start page) -->
+<header class="hero" id="heroHeader">
+
+  <!-- Slideshow -->
+  <div class="hero-slideshow" id="heroSlideshow">
+
+    <!-- SLIDE 2: Exklusiver Marktzugang -->
+    <div class="hero-slide active" style="background:linear-gradient(135deg,#071a2f 0%,#0a2540 50%,#0b3060 100%);">
+      <div class="hero-slide-overlay" style="background:linear-gradient(135deg,rgba(7,26,47,0.6),rgba(11,42,74,0.45));"></div>
+      <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;">
+        <div style="position:absolute;right:-2%;top:50%;transform:translateY(-50%);font-size:clamp(100px,18vw,220px);opacity:0.05;font-family:'Montserrat',sans-serif;font-weight:900;color:#18b6d6;letter-spacing:-5px;line-height:1;">INT</div>
+      </div>
+      <div class="hero-slide-content" style="text-align:center;max-width:860px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <span style="width:40px;height:2px;background:#18b6d6;display:inline-block;"></span>
+          <span style="color:#18b6d6;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;"
+            data-en="From a Single Source" data-de="Aus einer Hand" data-es="Todo desde un único proveedor" data-fr="Tout auprès d'un seul interlocuteur" data-it="Da un unico interlocutore" data-ru="Всё из одних рук" data-uk="Усе в одних руках">From a Single Source</span>
+          <span style="width:40px;height:2px;background:#18b6d6;display:inline-block;"></span>
+        </div>
+        <h1 style="font-size:clamp(32px,6vw,72px);line-height:1.05;margin-bottom:16px;font-weight:900;">
+          <span style="display:block;color:#18b6d6;"
+            data-en="INTERNATIONAL" data-de="INTERNATIONALER" data-es="INTERNACIONAL" data-fr="INTERNATIONAL" data-it="INTERNAZIONALE" data-ru="МЕЖДУНАРОДНЫЙ" data-uk="МІЖНАРОДНИЙ">INTERNATIONAL</span>
+          <span data-en="Market Access" data-de="Marktzugang" data-es="Exclusivo al Mercado" data-fr="Exclusif au Marché" data-it="Esclusivo al Mercato" data-ru="Доступ на Рынок" data-uk="Доступ до Ринку">Market Access</span>
+        </h1>
+        <p style="font-size:clamp(13px,1.5vw,17px);max-width:680px;margin:0 auto 24px;line-height:1.8;"
+          data-en="International market access from a single source: established products in Urology, Gastroenterology and Gynaecology, identification of medical devices that are not yet available in your market or that you cannot source, and the development of efficient partnerships."
+          data-de="Internationaler Marktzugang aus einer Hand: etablierte Produkte in Urologie, Gastroenterologie und Gynäkologie, Identifizierung von Medizinprodukten, die in Ihrem Markt noch nicht erhältlich sind oder die Sie nicht beschaffen können, und Aufbau effizienter Partnerschaften."
+          data-es="Acceso internacional al mercado desde un único proveedor: productos consolidados en Urología, Gastroenterología y Ginecología, identificación de productos sanitarios que aún no están disponibles en su mercado o que usted no puede adquirir, y desarrollo de alianzas eficientes."
+          data-fr="Accès international au marché auprès d'un interlocuteur unique : produits établis en urologie, gastro-entérologie et gynécologie, identification de dispositifs médicaux pas encore disponibles sur votre marché ou que vous ne pouvez pas vous procurer, et développement de partenariats efficaces."
+          data-it="Accesso internazionale al mercato da un unico interlocutore: prodotti consolidati in urologia, gastroenterologia e ginecologia, individuazione di dispositivi medici non ancora disponibili nel vostro mercato o che non riuscite a reperire e sviluppo di partnership efficienti."
+          data-ru="Международный выход на рынок из одних рук: проверенные продукты в урологии, гастроэнтерологии и гинекологии, поиск медицинских изделий, которые ещё недоступны на вашем рынке или которые вы не можете приобрести, и выстраивание эффективных партнёрств."
+          data-uk="Міжнародний вихід на ринок в одних руках: перевірені продукти в урології, гастроентерології та гінекології, пошук медичних виробів, які ще недоступні на вашому ринку або які ви не можете придбати, та побудова ефективних партнерств.">International market access from a single source: established products in Urology, Gastroenterology and Gynaecology, identification of medical devices that are not yet available in your market or that you cannot source, and the development of efficient partnerships.</p>
+        <button onclick="showSection('about us')" style="padding:12px 28px;border:none;border-radius:8px;background:#18b6d6;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:14px;"
+          data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
+      </div>
+    </div>
+    <!-- SLIDE 3: RegCheck Service -->
+    <div class="hero-slide" style="background:linear-gradient(135deg,#071a2f 0%,#0a2540 55%,#0b3560 100%);">
+      <div class="hero-slide-overlay" style="background:linear-gradient(145deg,rgba(7,26,47,0.55),rgba(24,182,214,0.08));"></div>
+      <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;">
+        <div style="position:absolute;right:-3%;top:50%;transform:translateY(-50%);font-size:clamp(90px,15vw,180px);opacity:0.04;font-family:'Montserrat',sans-serif;font-weight:900;color:#18b6d6;letter-spacing:-3px;line-height:1;">REG</div>
+      </div>
+      <div class="hero-slide-content" style="text-align:center;max-width:860px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <span style="width:36px;height:2px;background:#18b6d6;display:inline-block;"></span>
+          <span style="color:#18b6d6;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;"
+            data-en="For International Companies" data-de="Für internationale Unternehmen" data-es="Para empresas internacionales" data-fr="Pour les entreprises internationales" data-it="Per aziende internazionali" data-ru="Для международных компаний" data-uk="Для міжнародних компаній">For International Companies</span>
+          <span style="width:36px;height:2px;background:#18b6d6;display:inline-block;"></span>
+        </div>
+        <h1 style="font-size:clamp(32px,5.5vw,66px);line-height:1.05;margin-bottom:16px;font-weight:900;">
+          <span style="display:block;color:#18b6d6;font-size:clamp(42px,7vw,84px);line-height:1;">RegCheck</span>
+          <span data-en="Service" data-de="Service" data-es="Servicio" data-fr="Service" data-it="Servizio" data-ru="Сервис" data-uk="Сервіс">Service</span>
+        </h1>
+        <p style="font-size:clamp(13px,1.5vw,17px);max-width:700px;margin:0 auto 24px;line-height:1.8;"
+          data-en="We support medical device manufacturers with regulatory preparation for international market access."
+          data-de="Wir unterstützen Hersteller von Medizinprodukten bei der regulatorischen Vorbereitung des internationalen Marktzugangs."
+          data-es="Apoyamos a los fabricantes de productos sanitarios en la preparación regulatoria para el acceso internacional al mercado."
+          data-fr="Nous accompagnons les fabricants de dispositifs médicaux dans la préparation réglementaire en vue de l'accès international au marché."
+          data-it="Supportiamo i fabbricanti di dispositivi medici nella preparazione regolatoria per l'accesso internazionale al mercato."
+          data-ru="Мы поддерживаем производителей медицинских изделий в регуляторной подготовке к международному выходу на рынок."
+          data-uk="Ми підтримуємо виробників медичних виробів у регуляторній підготовці до міжнародного виходу на ринок.">We support medical device manufacturers with regulatory preparation for international market access.</p>
+        <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:22px;">
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Technical Documentation" data-de="Techn. Dokumentation" data-es="Doc. Técnica" data-fr="Doc. Technique" data-it="Doc. Tecnica" data-ru="Тех. Документация" data-uk="Тех. Документація">Technical Documentation</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Compliance Check" data-de="Compliance-Check" data-es="Comprobación de cumplimiento" data-fr="Contrôle de conformité" data-it="Verifica di conformità" data-ru="Проверка соответствия" data-uk="Перевірка відповідності">Compliance Check</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="Market Registration" data-de="Marktregistrierung" data-es="Registro de Mercado" data-fr="Enregistrement Marché" data-it="Registrazione Mercato" data-ru="Рыночная Регистрация" data-uk="Ринкова Реєстрація">Market Registration</div>
+          </div>
+          <div style="background:rgba(24,182,214,0.12);border:1px solid rgba(24,182,214,0.35);border-radius:10px;padding:10px 20px;text-align:center;min-width:160px;">
+            <div style="font-size:13px;font-weight:800;color:#18b6d6;font-family:'Montserrat',sans-serif;" data-en="CH-Rep — Swiss Market Access" data-de="CH-Rep — Schweizer Marktzugang" data-es="CH-Rep — Acceso mercado suizo" data-fr="CH-Rep — Accès marché suisse" data-it="CH-Rep — Accesso mercato svizzero" data-ru="CH-Rep — Доступ на рынок Швейцарии" data-uk="CH-Rep — Доступ до ринку Швейцарії">CH-Rep — Swiss Market Access</div>
+          </div>
+        </div>
+        <button onclick="showSection('about us')" style="padding:12px 28px;border:none;border-radius:8px;background:#18b6d6;color:white;cursor:pointer;font-weight:700;font-family:'Montserrat',sans-serif;font-size:14px;"
+          data-en="Learn More" data-de="Mehr erfahren" data-es="Saber más" data-fr="En savoir plus" data-it="Scopri di più" data-ru="Узнать больше" data-uk="Дізнатися більше">Learn More</button>
+      </div>
+    </div>
+
+
+    <!-- Slideshow dots -->
+    <div class="hero-dots">
+<button class="hero-dot active" onclick="goToSlide(0)"></button>
+      <button class="hero-dot" onclick="goToSlide(1)"></button>
+    </div>
+  </div>
+
+  <!-- Key Facts -->
+  <div class="key-facts">
+    <div class="key-fact">
+      <div class="key-fact-num">3</div>
+      <div class="key-fact-label" data-en="Specialties" data-de="Fachgebiete" data-es="Especialidades" data-fr="Spécialités" data-it="Specialità" data-ru="Специальности" data-uk="Спеціальності">Specialties</div>
+    </div>
+    <div class="key-fact">
+      <div class="key-fact-num" style="font-size:18px;line-height:1.2;">ISO · MDR</div>
+      <div class="key-fact-label" data-en="Regulatory Compliance" data-de="Regulatorische Compliance" data-es="Cumplimiento Regulatorio" data-fr="Conformité Réglementaire" data-it="Conformità Normativa" data-ru="Регуляторное Соответствие" data-uk="Регуляторна Відповідність">Regulatory Compliance</div>
+    </div>
+    <div class="key-fact">
+      <div class="key-fact-num">CH</div>
+      <div class="key-fact-label" data-en="Swiss Based" data-de="Schweiz Basis" data-es="Con sede en Suiza" data-fr="Basé en Suisse" data-it="Con sede in Svizzera" data-ru="Швейцарская основа" data-uk="Швейцарська база">Swiss Based</div>
+    </div>
+    <div class="key-fact">
+      <div class="key-fact-num">🌍</div>
+      <div class="key-fact-label" data-en="Global Distribution" data-de="Globale Distribution" data-es="Distribución global" data-fr="Distribution mondiale" data-it="Distribuzione globale" data-ru="Глобальное распределение" data-uk="Глобальний розподіл">Global Distribution</div>
+    </div>
+  </div>
+
+  <!-- SOURCING BAND -->
+  <div class="sourcing-band">
+    <h2 data-en="Sourcing of Medical Devices" data-de="Beschaffung von Medizinprodukten" data-es="Suministro de productos sanitarios" data-fr="Approvisionnement en dispositifs médicaux" data-it="Approvvigionamento di dispositivi medici" data-ru="Поставки медицинских изделий" data-uk="Постачання медичних виробів">Sourcing of Medical Devices</h2>
+    <p data-en="We support you in sourcing medical devices that are not yet available in your market or that you are unable to procure – from identifying suitable products and manufacturers through regulatory documentation to reliable supply." data-de="Wir unterstützen Sie bei der Beschaffung von Medizinprodukten, die in Ihrem Markt noch nicht verfügbar sind oder die Sie nicht beschaffen können – von der Identifizierung geeigneter Produkte und Hersteller über die regulatorische Dokumentation bis zur zuverlässigen Lieferung." data-es="Le apoyamos en la adquisición de productos sanitarios que aún no están disponibles en su mercado o que no puede obtener: desde la identificación de productos y fabricantes adecuados y la documentación regulatoria hasta un suministro fiable." data-fr="Nous vous accompagnons dans l'approvisionnement en dispositifs médicaux qui ne sont pas encore disponibles sur votre marché ou que vous ne parvenez pas à vous procurer : de l'identification des produits et fabricants adaptés à la documentation réglementaire, jusqu'à un approvisionnement fiable." data-it="Vi supportiamo nell'approvvigionamento di dispositivi medici non ancora disponibili nel vostro mercato o che non riuscite a reperire: dall'individuazione di prodotti e fabbricanti idonei alla documentazione regolatoria, fino a forniture affidabili." data-ru="Мы поддерживаем вас в закупке медицинских изделий, которых ещё нет на вашем рынке или которые вы не можете приобрести: от поиска подходящих изделий и производителей и регуляторной документации до надёжных поставок." data-uk="Ми підтримуємо вас у закупівлі медичних виробів, яких ще немає на вашому ринку або які ви не можете придбати: від пошуку відповідних виробів і виробників та регуляторної документації до надійних поставок.">We support you in sourcing medical devices that are not yet available in your market or that you are unable to procure – from identifying suitable products and manufacturers through regulatory documentation to reliable supply.</p>
+  </div>
+
+</header>
+
+<!-- VIDEO SECTION -->
+<section id="video" class="page">
+  <h2
+    data-en="Introduction Video"
+    data-de="Einführungsvideo"
+    data-es="Video de presentación"
+    data-fr="Vidéo de présentation"
+    data-it="Video di presentazione"
+    data-ru="Вводное видео"
+    data-uk="Вступне відео">Introduction Video</h2>
+
+  <video controls class="video-embed"
+    style="max-width:100%;width:900px;border-radius:12px;display:block;margin:0 auto;">
+    <source src="videos/Life Care Med Swiss Introduction_0p.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- HOME SECTION -->
+<section id="home" class="page">
+  <h2
+    data-en="LifeCare Med Swiss"
+    data-de="LifeCare Med Swiss"
+    data-es="LifeCare Med Swiss"
+    data-fr="LifeCare Med Swiss"
+    data-it="LifeCare Med Swiss"
+    data-ru="LifeCare Med Swiss"
+    data-uk="LifeCare Med Swiss">LifeCare Med Swiss</h2>
+
+  <p style="text-align:center; max-width:820px; margin:0 auto 30px;"
+    data-en="We support manufacturers of medical devices with regulatory services for international market access."
+    data-de="Wir unterstützen Hersteller von Medizinprodukten mit regulatorischen Dienstleistungen für den internationalen Marktzugang."
+    data-es="Apoyamos a los fabricantes de productos sanitarios con servicios regulatorios para el acceso internacional al mercado."
+    data-fr="Nous accompagnons les fabricants de dispositifs médicaux avec des services réglementaires pour l'accès international au marché."
+    data-it="Supportiamo i fabbricanti di dispositivi medici con servizi regolatori per l'accesso internazionale al mercato."
+    data-ru="Мы поддерживаем производителей медицинских изделий регуляторными услугами для международного выхода на рынок."
+    data-uk="Ми підтримуємо виробників медичних виробів регуляторними послугами для міжнародного виходу на ринок.">We support manufacturers of medical devices with regulatory services for international market access.</p>
+
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about us" class="page">
+  <h2
+    data-en="About Us"
+    data-de="Über uns"
+    data-es="Sobre nosotros"
+    data-fr="À propos de nous"
+    data-it="Chi siamo"
+    data-ru="О нас"
+    data-uk="Про нас">About Us</h2>
+
+  <p class="about-intro"
+    data-en="LifeCare Med Swiss provides regulatory services for medical device manufacturers. Through our RegCheck Service we support international companies in preparing their medical devices for market access. Our CH-Rep service for the Swiss market starts once our Swissmedic registration is complete."
+    data-de="LifeCare Med Swiss bietet regulatorische Dienstleistungen für Hersteller von Medizinprodukten an. Mit dem RegCheck Service unterstützen wir internationale Unternehmen bei der Vorbereitung ihres Marktzugangs. Unser CH-Rep-Service für den Schweizer Markt startet nach Abschluss unserer Swissmedic-Registrierung."
+    data-es="LifeCare Med Swiss ofrece servicios regulatorios para fabricantes de productos sanitarios. Con nuestro servicio RegCheck apoyamos a empresas internacionales en la preparación de sus productos sanitarios para el acceso al mercado. Nuestro servicio CH-Rep para el mercado suizo comenzará una vez completado nuestro registro en Swissmedic."
+    data-fr="LifeCare Med Swiss propose des services réglementaires aux fabricants de dispositifs médicaux. Grâce à notre service RegCheck, nous accompagnons les entreprises internationales dans la préparation de leurs dispositifs médicaux en vue de l'accès au marché. Notre service CH-Rep pour le marché suisse débutera une fois notre enregistrement auprès de Swissmedic finalisé."
+    data-it="LifeCare Med Swiss offre servizi regolatori ai fabbricanti di dispositivi medici. Con il nostro servizio RegCheck supportiamo le aziende internazionali nella preparazione dei loro dispositivi medici per l'accesso al mercato. Il nostro servizio CH-Rep per il mercato svizzero partirà al completamento della nostra registrazione presso Swissmedic."
+    data-ru="LifeCare Med Swiss предоставляет регуляторные услуги для производителей медицинских изделий. С помощью сервиса RegCheck мы поддерживаем международные компании в подготовке их медицинских изделий к выходу на рынок. Наш сервис CH-Rep для швейцарского рынка стартует после завершения нашей регистрации в Swissmedic."
+    data-uk="LifeCare Med Swiss надає регуляторні послуги для виробників медичних виробів. За допомогою сервісу RegCheck ми підтримуємо міжнародні компанії у підготовці їхніх медичних виробів до виходу на ринок. Наш сервіс CH-Rep для швейцарського ринку запрацює після завершення нашої реєстрації в Swissmedic.">LifeCare Med Swiss provides regulatory services for medical device manufacturers. Through our RegCheck Service we support international companies in preparing their medical devices for market access. Our CH-Rep service for the Swiss market starts once our Swissmedic registration is complete.</p>
+
+  <p class="about-roles">Regulatory Services for Medical Device Manufacturers</p>
+
+  <div class="about-grid">
+
+    <div class="about-card">
+      <h3
+        data-en="Our Mission"
+        data-de="Unsere Mission"
+        data-es="Nuestra Misión"
+        data-fr="Notre Mission"
+        data-it="La Nostra Missione"
+        data-ru="Наша Миссия"
+        data-uk="Наша Місія">Our Mission</h3>
+      <p style="font-size:13.5px; color:#d0e4f7; line-height:1.75; margin:0;"
+        data-en="We support manufacturers of medical devices with regulatory services for international market access."
+        data-de="Wir unterstützen Hersteller von Medizinprodukten mit regulatorischen Dienstleistungen für den internationalen Marktzugang."
+        data-es="Apoyamos a los fabricantes de productos sanitarios con servicios regulatorios para el acceso internacional al mercado."
+        data-fr="Nous accompagnons les fabricants de dispositifs médicaux avec des services réglementaires pour l'accès international au marché."
+        data-it="Supportiamo i fabbricanti di dispositivi medici con servizi regolatori per l'accesso internazionale al mercato."
+        data-ru="Мы поддерживаем производителей медицинских изделий регуляторными услугами для международного выхода на рынок."
+        data-uk="Ми підтримуємо виробників медичних виробів регуляторними послугами для міжнародного виходу на ринок.">We support manufacturers of medical devices with regulatory services for international market access.</p>
+    </div>
+
+    <div class="about-card">
+      <h3
+        data-en="Core Team"
+        data-de="Unser Core Team"
+        data-es="Equipo principal"
+        data-fr="Équipe principale"
+        data-it="Team principale"
+        data-ru="Основная команда"
+        data-uk="Основна команда">Core Team</h3>
+      <ul>
+        <li data-en="R&amp;D medical devices &amp; production" data-de="F&amp;E Medizintechnik &amp; Produktion" data-es="I+D de dispositivos médicos y producción" data-fr="R&amp;D dispositifs médicaux &amp; production" data-it="R&amp;D dispositivi medici &amp; produzione" data-ru="НИОКР медицинских изделий и производство" data-uk="НДДКР медичних виробів і виробництво">R&amp;D medical devices &amp; production</li>
+        <li data-en="Clinical application" data-de="Klinische Anwendung" data-es="Aplicación clínica" data-fr="Application clinique" data-it="Applicazione clinica" data-ru="Клиническое применение" data-uk="Клінічне застосування">Clinical application</li>
+        <li data-en="Quality management" data-de="Qualitätsmanagement" data-es="Gestión de calidad" data-fr="Gestion de la qualité" data-it="Gestione della qualità" data-ru="Управление качеством" data-uk="Управління якістю">Quality management</li>
+        <li data-en="Regulatory Affairs" data-de="Regulatory Affairs" data-es="Asuntos regulatorios" data-fr="Affaires réglementaires" data-it="Affari regolatori" data-ru="Регуляторные вопросы" data-uk="Регуляторні питання">Regulatory Affairs</li>
+        <li data-en="Supply Chain &amp; export documents (CH – Free Sales Certificates, COO, CoA, CoC, invoice, delivery note)" data-de="Supply Chain inkl. Exportdokumente (CH – Free Sales Certificates, COO, CoA, CoC, Rechnung, Lieferschein)" data-es="Cadena de suministro y documentos de exportación (CH – certificados de libre venta, COO, CoA, CoC, factura, albarán)" data-fr="Chaîne d'approvisionnement &amp; documents d'exportation (CH – certificats de libre vente, COO, CoA, CoC, facture, bon de livraison)" data-it="Supply Chain &amp; documenti di esportazione (CH – certificati di libera vendita, COO, CoA, CoC, fattura, bolla di consegna)" data-ru="Цепочка поставок и экспортные документы (CH – сертификаты свободной продажи, COO, CoA, CoC, счет-фактура, накладная)" data-uk="Ланцюг постачання та експортні документи (CH – сертифікати вільного продажу, COO, CoA, CoC, рахунок, накладна)">Supply Chain &amp; export documents (CH – Free Sales Certificates, COO, CoA, CoC, invoice, delivery note)</li>
+        <li data-en="Customer service &amp; training" data-de="Kundenservice &amp; Schulung" data-es="Atención al cliente y formación" data-fr="Service client &amp; formation" data-it="Servizio clienti &amp; formazione" data-ru="Обслуживание клиентов и обучение" data-uk="Обслуговування клієнтів та навчання">Customer service &amp; training</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3
+        data-en="RegCheck Service"
+        data-de="RegCheck Service"
+        data-es="Servicio RegCheck"
+        data-fr="Service RegCheck"
+        data-it="Servizio RegCheck"
+        data-ru="Сервис RegCheck"
+        data-uk="Сервіс RegCheck">RegCheck Service</h3>
+      <ul>
+        <li data-en="Creation and maintenance of technical documentation (80% faster)" data-de="Erstellung und Aufrechterhaltung technischer Dokumentation (80% schneller)" data-es="Creación y mantenimiento de documentación técnica (80% más rápido)" data-fr="Création et maintenance de la documentation technique (80% plus rapide)" data-it="Creazione e mantenimento della documentazione tecnica (80% più veloce)" data-ru="Создание и ведение технической документации (на 80% быстрее)" data-uk="Створення та ведення технічної документації (на 80% швидше)">Creation and maintenance of technical documentation (80% faster)</li>
+        <li data-en="Regulatory compliance check" data-de="Regulatorischer Compliance-Check" data-es="Comprobación de cumplimiento regulatorio" data-fr="Contrôle de conformité réglementaire" data-it="Verifica di conformità regolatoria" data-ru="Проверка регуляторного соответствия" data-uk="Перевірка регуляторної відповідності">Regulatory compliance check</li>
+        <li data-en="Management of audits &amp; inspections" data-de="Begleitung von Audits &amp; Inspektionen" data-es="Gestión de auditorías e inspecciones" data-fr="Gestion des audits &amp; inspections" data-it="Gestione di audit e ispezioni" data-ru="Управление аудитами и инспекциями" data-uk="Управління аудитами та інспекціями">Management of audits &amp; inspections</li>
+        <li data-en="Management of clinical evaluations &amp; PMS system" data-de="Management von klinischen Bewertungen &amp; PMS-Systemen" data-es="Gestión de evaluaciones clínicas y sistema PMS" data-fr="Gestion des évaluations cliniques &amp; système PMS" data-it="Gestione delle valutazioni cliniche &amp; sistema PMS" data-ru="Управление клиническими оценками и системой PMS" data-uk="Управління клінічними оцінками та системою PMS">Management of clinical evaluations &amp; PMS system</li>
+        <li data-en="Market access / registration of medical devices internationally" data-de="Marktzugang / Registrierung von Medizinprodukten international" data-es="Acceso al mercado / registro de productos médicos internacional" data-fr="Accès au marché / enregistrement international de dispositifs médicaux" data-it="Accesso al mercato / registrazione internazionale di dispositivi medici" data-ru="Выход на рынок / регистрация медицинских изделий международно" data-uk="Вихід на ринок / реєстрація медичних виробів міжнародно">Market access / registration of medical devices internationally</li>
+        <li data-en="CH-Rep services for access to the Swiss market" data-de="CH-Rep Dienstleistungen für den Zugang zum Schweizer Markt" data-es="Servicios CH-Rep para el acceso al mercado suizo" data-fr="Services CH-Rep pour l'accès au marché suisse" data-it="Servizi CH-Rep per l'accesso al mercato svizzero" data-ru="Услуги CH-Rep для доступа к рынку Швейцарии" data-uk="Послуги CH-Rep для доступу до ринку Швейцарії">CH-Rep services for access to the Swiss market</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3
+        data-en="Our Values"
+        data-de="Unsere Werte"
+        data-es="Nuestros valores"
+        data-fr="Nos valeurs"
+        data-it="I nostri valori"
+        data-ru="Наши ценности"
+        data-uk="Наші цінності">Our Values</h3>
+      <ul>
+        <li data-en="Competitive pricing with transparent cost structures" data-de="Wettbewerbsfähige Preise mit transparenten Kostenstrukturen" data-es="Precios competitivos con estructuras de costos transparentes" data-fr="Prix compétitifs avec des structures de coûts transparentes" data-it="Prezzi competitivi con strutture di costo trasparenti" data-ru="Конкурентные цены с прозрачными структурами затрат" data-uk="Конкурентні ціни з прозорими структурами витрат">Competitive pricing with transparent cost structures</li>
+        <li data-en="Structured regulatory preparation for medical device manufacturers" data-de="Strukturierte regulatorische Vorbereitung für Hersteller von Medizinprodukten" data-es="Preparación regulatoria estructurada para fabricantes de productos sanitarios" data-fr="Préparation réglementaire structurée pour les fabricants de dispositifs médicaux" data-it="Preparazione regolatoria strutturata per i fabbricanti di dispositivi medici" data-ru="Структурированная регуляторная подготовка для производителей медицинских изделий" data-uk="Структурована регуляторна підготовка для виробників медичних виробів">Structured regulatory preparation for medical device manufacturers</li>
+        <li data-en="Transparent and reliable supply chains" data-de="Transparente und zuverlässige Lieferketten" data-es="Cadenas de suministro transparentes y confiables" data-fr="Chaînes d'approvisionnement transparentes et fiables" data-it="Catene di approvvigionamento trasparenti e affidabili" data-ru="Прозрачные и надёжные цепочки поставок" data-uk="Прозорі та надійні ланцюги постачання">Transparent and reliable supply chains</li>
+        <li data-en="Regulatory responsibility &amp; MDR compliance" data-de="Regulatorische Verantwortung &amp; MDR-Konformität" data-es="Responsabilidad regulatoria y cumplimiento MDR" data-fr="Responsabilité réglementaire et conformité MDR" data-it="Responsabilità normativa e conformità MDR" data-ru="Регуляторная ответственность и соответствие MDR" data-uk="Регуляторна відповідальність та відповідність MDR">Regulatory responsibility &amp; MDR compliance</li>
+        <li data-en="Sustainable long-term partnerships" data-de="Nachhaltige langfristige Partnerschaften" data-es="Asociaciones sostenibles a largo plazo" data-fr="Partenariats durables à long terme" data-it="Partnership sostenibili a lungo termine" data-ru="Устойчивые долгосрочные партнерства" data-uk="Сталі довгострокові партнерства">Sustainable long-term partnerships</li>
+        <li data-en="Market introduction support" data-de="Unterstützung bei der Markteinführung" data-es="Apoyo a la introducción en el mercado" data-fr="Soutien à l'introduction sur le marché" data-it="Supporto all'introduzione sul mercato" data-ru="Поддержка вывода на рынок" data-uk="Підтримка виведення на ринок">Market introduction support</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- REGCHECK SERVICE SECTION -->
+<section id="regcheck" class="page">
+  <h2 data-en="RegCheck Service" data-de="RegCheck Service" data-es="Servicio RegCheck" data-fr="Service RegCheck" data-it="Servizio RegCheck" data-ru="Сервис RegCheck" data-uk="Сервіс RegCheck">RegCheck Service</h2>
+
+  <p style="text-align:center;max-width:780px;margin:0 auto 36px;line-height:1.8;"
+    data-en="LifeCare Med Swiss offers the RegCheck Service to international manufacturers: a review of the regulatory requirements for placing medical devices on target markets."
+    data-de="LifeCare Med Swiss bietet internationalen Herstellern den RegCheck Service an: eine Prüfung der regulatorischen Anforderungen für das Inverkehrbringen von Medizinprodukten in Zielmärkten."
+    data-es="LifeCare Med Swiss ofrece el servicio RegCheck a fabricantes internacionales: una revisión de los requisitos regulatorios para comercializar productos sanitarios en los mercados de destino."
+    data-fr="LifeCare Med Swiss propose le service RegCheck aux fabricants internationaux : un examen des exigences réglementaires pour la mise sur le marché de dispositifs médicaux dans les marchés cibles."
+    data-it="LifeCare Med Swiss offre il servizio RegCheck ai fabbricanti internazionali: una verifica dei requisiti regolatori per l'immissione in commercio di dispositivi medici nei mercati di destinazione."
+    data-ru="LifeCare Med Swiss предлагает международным производителям сервис RegCheck: проверку регуляторных требований для вывода медицинских изделий на целевые рынки."
+    data-uk="LifeCare Med Swiss пропонує міжнародним виробникам сервіс RegCheck: перевірку регуляторних вимог для виведення медичних виробів на цільові ринки.">LifeCare Med Swiss offers the RegCheck Service to international manufacturers: a review of the regulatory requirements for placing medical devices on target markets.</p>
+
+  <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:22px;max-width:1000px;margin:0 auto 40px;">
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:28px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;">80%</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Faster Documentation" data-de="Schnellere Dokumentation" data-es="Documentación más rápida" data-fr="Documentation plus rapide" data-it="Documentazione più veloce" data-ru="Более быстрая документация" data-uk="Швидша документація">Faster Documentation</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Creation and maintenance of technical documentation — up to 80% faster than standard processes." data-de="Erstellung und Pflege technischer Dokumentation — bis zu 80 % schneller als Standardprozesse." data-es="Creación y mantenimiento de documentación técnica — hasta un 80 % más rápido que los procesos estándar." data-fr="Création et maintenance de la documentation technique — jusqu'à 80 % plus rapide que les processus standard." data-it="Creazione e manutenzione della documentazione tecnica — fino all'80% più veloce dei processi standard." data-ru="Создание и ведение технической документации — до 80% быстрее стандартных процессов." data-uk="Створення та ведення технічної документації — до 80% швидше стандартних процесів.">Creation and maintenance of technical documentation — up to 80% faster than standard processes.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:28px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;">1 day</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Compliance Check" data-de="Compliance-Prüfung" data-es="Comprobación de cumplimiento" data-fr="Contrôle de conformité" data-it="Verifica di conformità" data-ru="Проверка соответствия" data-uk="Перевірка відповідності">Compliance Check</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Regulatory compliance check completed within 1 business day — fast, reliable, and fully documented." data-de="Regulatory-Compliance-Prüfung innerhalb von 1 Werktag — schnell, zuverlässig und vollständig dokumentiert." data-es="Verificación de cumplimiento regulatorio completada en 1 día hábil — rápida, confiable y completamente documentada." data-fr="Vérification de conformité réglementaire réalisée en 1 jour ouvrable — rapide, fiable et entièrement documentée." data-it="Verifica di conformità normativa completata in 1 giorno lavorativo — rapida, affidabile e completamente documentata." data-ru="Проверка регуляторного соответствия выполняется за 1 рабочий день — быстро, надёжно и с полной документацией." data-uk="Перевірка регуляторної відповідності виконується протягом 1 робочого дня — швидко, надійно та з повною документацією.">Regulatory compliance check completed within 1 business day — fast, reliable, and fully documented.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">Audit &amp;<br>Inspection</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Audit support" data-de="Audit-Unterstützung" data-es="Apoyo en auditorías" data-fr="Soutien aux audits" data-it="Supporto negli audit" data-ru="Поддержка при аудитах" data-uk="Підтримка під час аудитів">Audit support</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Management of audits, inspections, clinical evaluations, and PMS systems." data-de="Begleitung von Audits, Inspektionen, klinischen Bewertungen und PMS-Systemen." data-es="Gestión de auditorías, inspecciones, evaluaciones clínicas y sistemas PMS." data-fr="Gestion des audits, inspections, évaluations cliniques et systèmes PMS." data-it="Gestione di audit, ispezioni, valutazioni cliniche e sistemi PMS." data-ru="Управление аудитами, инспекциями, клиническими оценками и системами PMS." data-uk="Управління аудитами, інспекціями, клінічними оцінками та системами PMS.">Management of audits, inspections, clinical evaluations, and PMS systems.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">Market<br>Access</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="International Registration" data-de="Internationale Registrierung" data-es="Registro internacional" data-fr="Enregistrement international" data-it="Registrazione internazionale" data-ru="Международная регистрация" data-uk="Міжнародна реєстрація">International Registration</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="Market access and registration of medical devices in international markets — ensuring your products reach where they are needed." data-de="Marktzugang und Registrierung von Medizinprodukten in internationalen Märkten — damit Ihre Produkte dort ankommen, wo sie gebraucht werden." data-es="Acceso al mercado y registro de dispositivos médicos en mercados internacionales — para que sus productos lleguen donde se necesitan." data-fr="Accès au marché et enregistrement de dispositifs médicaux sur les marchés internationaux — pour que vos produits parviennent là où ils sont nécessaires." data-it="Accesso al mercato e registrazione di dispositivi medici nei mercati internazionali — per garantire che i vostri prodotti raggiungano dove sono necessari." data-ru="Выход на рынок и регистрация медицинских изделий на международных рынках — чтобы ваши продукты достигали тех, кто в них нуждается." data-uk="Вихід на ринок та реєстрація медичних виробів на міжнародних ринках — щоб ваші продукти досягали тих, хто їх потребує.">Market access and registration of medical devices in international markets — ensuring your products reach where they are needed.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.05);border:1.5px solid rgba(24,182,214,0.35);border-radius:14px;padding:28px 30px;min-width:220px;max-width:290px;flex:1;">
+      <div style="font-size:22px;font-weight:900;color:#18b6d6;font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">CH-Rep<br>Services</div>
+      <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:8px;" data-en="Swiss Market Access" data-de="Schweizer Marktzugang" data-es="Acceso al Mercado Suizo" data-fr="Accès au Marché Suisse" data-it="Accesso al Mercato Svizzero" data-ru="Доступ на рынок Швейцарии" data-uk="Доступ до ринку Швейцарії">Swiss Market Access</div>
+      <div style="font-size:12px;color:#d7e6ff;line-height:1.65;" data-en="CH-Rep service for manufacturers who plan to place devices on the Swiss market. Available once our Swissmedic registration is complete." data-de="CH-Rep-Service für Hersteller, die Produkte auf dem Schweizer Markt in Verkehr bringen wollen. Verfügbar nach Abschluss unserer Swissmedic-Registrierung." data-es="Servicio CH-Rep para fabricantes que planean comercializar productos en el mercado suizo. Disponible una vez completado nuestro registro en Swissmedic." data-fr="Service CH-Rep pour les fabricants qui prévoient de mettre des dispositifs sur le marché suisse. Disponible une fois notre enregistrement auprès de Swissmedic finalisé." data-it="Servizio CH-Rep per i fabbricanti che intendono immettere dispositivi sul mercato svizzero. Disponibile al completamento della nostra registrazione presso Swissmedic." data-ru="Сервис CH-Rep для производителей, планирующих вывести изделия на швейцарский рынок. Доступен после завершения нашей регистрации в Swissmedic." data-uk="Сервіс CH-Rep для виробників, які планують вивести вироби на швейцарський ринок. Доступний після завершення нашої реєстрації в Swissmedic.">CH-Rep service for manufacturers who plan to place devices on the Swiss market. Available once our Swissmedic registration is complete.</div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;">
+    <button onclick="openEmailPopup()" style="padding:13px 30px;background:#18b6d6;color:white;border:none;border-radius:8px;cursor:pointer;font-weight:700;font-size:15px;font-family:'Montserrat',sans-serif;"
+      data-en="Contact us for RegCheck"
+      data-de="RegCheck anfragen"
+      data-es="Contáctenos para RegCheck"
+      data-fr="Contactez-nous pour RegCheck"
+      data-it="Contattaci per RegCheck"
+      data-ru="Связаться по RegCheck"
+      data-uk="Зв'язатися щодо RegCheck">Contact us for RegCheck</button>
+  </div>
+</section>
+
+<!-- QUALITY & COMPLIANCE (formerly Regulatory Documents) -->
+
+<!-- PRODUCTS SECTION -->
+<section id="products" class="page">
+  <h2
+    data-en="Products"
+    data-de="Produkte"
+    data-es="Productos"
+    data-fr="Produits"
+    data-it="Prodotti"
+    data-ru="Продукты"
+    data-uk="Продукти">Products</h2>
+  <p style="text-align:center;opacity:0.7;font-size:13px;margin-bottom:28px;"
+    data-en="Click any product card to view full size image."
+    data-de="Klicken Sie auf eine Produktkarte, um das Bild in voller Größe anzuzeigen."
+    data-es="Haga clic en cualquier tarjeta de producto para ver la imagen completa."
+    data-fr="Cliquez sur une carte produit pour voir l'image en plein format."
+    data-it="Clicca su qualsiasi scheda prodotto per visualizzare l'immagine a piena dimensione."
+    data-ru="Нажмите на карточку продукта для просмотра изображения в полном размере."
+    data-uk="Натисніть на картку продукту для перегляду зображення в повному розмірі.">
+    Click any product card to view full size image.
+  </p>
+  <div id="products-catalog-list"></div>
+</section>
+
+<!-- CAREER -->
+<section id="career" class="page">
+  <h2
+    data-en="Career"
+    data-de="Karriere"
+    data-es="Carrera"
+    data-fr="Carrière"
+    data-it="Carriera"
+    data-ru="Карьера"
+    data-uk="Кар'єра">Career</h2>
+  <p
+    data-en="We are looking for motivated professionals in MedTech, Regulatory Affairs, Engineering, Production, Marketing &amp; Sales. Remote work is encouraged where possible."
+    data-de="Zur Verstärkung unseres Teams suchen wir engagierte Fachkräfte in den Bereichen MedTech, Regulatory Affairs, Engineering, Produktion sowie Marketing &amp; Sales. Remote-Arbeit ist, wo möglich, ausdrücklich erwünscht."
+    data-es="Buscamos profesionales motivados en MedTech, asuntos regulatorios, ingeniería, producción, marketing y ventas. El trabajo remoto es bienvenido siempre que sea posible."
+    data-fr="Nous recherchons des professionnels motivés en MedTech, affaires réglementaires, ingénierie, production, marketing et ventes. Le travail à distance est encouragé autant que possible."
+    data-it="Stiamo cercando professionisti motivati in MedTech, affari regolatori, ingegneria, produzione, marketing e vendite. Il lavoro da remoto è incoraggiato ove possibile."
+    data-ru="Мы ищем мотивированных специалистов в области MedTech, регуляторных вопросов, инженерии, производства, маркетинга и продаж. Удаленная работа приветствуется, где это возможно."
+    data-uk="Ми шукаємо мотивованих фахівців у сфері MedTech, регуляторних питань, інженерії, виробництва, маркетингу та продажів. Віддалена робота вітається там, де це можливо.">
+    We are looking for motivated professionals in MedTech, Regulatory Affairs, Engineering, Production, Marketing &amp; Sales. Remote work is encouraged where possible.
+  </p>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog" class="page">
+  <h2
+    data-en="Catalog"
+    data-de="Katalog"
+    data-es="Catálogo"
+    data-fr="Catalogue"
+    data-it="Catalogo"
+    data-ru="Каталог"
+    data-uk="Каталог">Catalog</h2>
+  <p style="text-align:center;font-size:18px;margin-top:10px;"
+    data-en="Coming soon"
+    data-de="Demnächst verfügbar"
+    data-es="Próximamente"
+    data-fr="Bientôt disponible"
+    data-it="Prossimamente"
+    data-ru="Скоро"
+    data-uk="Скоро">Coming soon</p>
+</section>
+
+<!-- HOVER PREVIEW (products page) -->
+<div class="prod-hover-img" id="prodHoverImg"><img id="prodHoverImgSrc" src="" alt=""></div>
+<!-- HOVER PREVIEW (mega menu) -->
+<div class="prod-hover-img" id="menuHoverImg"><img id="menuHoverImgSrc" src="" alt=""></div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+  <div class="lightbox-content"><img id="lightbox-img" alt="Product"></div>
+  <span class="close" onclick="closeLightbox()">×</span>
+</div>
+
+<!-- REG POPUP -->
+<div id="regPopup" class="lightbox">
+  <div class="popup-box">
+    <h3
+      data-en="Request Regulatory Documents"
+      data-de="Regulatorische Dokumente anfragen"
+      data-es="Solicitar documentos regulatorios"
+      data-fr="Demander les documents réglementaires"
+      data-it="Richiedere documenti normativi"
+      data-ru="Запросить регуляторные документы"
+      data-uk="Запросити регуляторні документи">Request Regulatory Documents</h3>
+    <p
+      data-en="Please contact us via Email or WhatsApp."
+      data-de="Bitte kontaktieren Sie uns per E-Mail oder WhatsApp."
+      data-es="Por favor contáctenos por correo electrónico o WhatsApp."
+      data-fr="Veuillez nous contacter par e-mail ou WhatsApp."
+      data-it="Si prega di contattarci via e-mail o WhatsApp."
+      data-ru="Пожалуйста, свяжитесь с нами по электронной почте или через WhatsApp."
+      data-uk="Будь ласка, зв'яжіться з нами електронною поштою або через WhatsApp.">Please contact us via Email or WhatsApp.</p>
+    <button onclick="openEmailPopup()">Email</button>
+    <button onclick="openWhatsAppPopup()">WhatsApp</button>
+    <br><br>
+    <button onclick="closeRegDocsPopup()"
+      data-en="Close" data-de="Schließen" data-es="Cerrar" data-fr="Fermer" data-it="Chiudi" data-ru="Закрыть" data-uk="Закрити">Close</button>
+  </div>
+</div>
+
+<!-- EMAIL POPUP -->
+<div id="emailPopup" class="lightbox">
+  <div class="popup-box">
+    <h3>Email Contact</h3>
+    <p>info@lifecaremedswiss.com</p>
+    <button onclick="window.location.href='mailto:info@lifecaremedswiss.com'"
+      data-en="Open Email" data-de="E-Mail öffnen" data-es="Abrir correo" data-fr="Ouvrir l'e-mail" data-it="Apri e-mail" data-ru="Открыть почту" data-uk="Відкрити пошту">Open Email</button>
+    <br><br>
+    <button onclick="closeEmailPopup()"
+      data-en="Close" data-de="Schließen" data-es="Cerrar" data-fr="Fermer" data-it="Chiudi" data-ru="Закрыть" data-uk="Закрити">Close</button>
+  </div>
+</div>
+
+<!-- WHATSAPP POPUP -->
+<div id="whatsappPopup" class="lightbox">
+  <div class="popup-box">
+    <h3>WhatsApp Contact</h3>
+    <p>+41 76 277 94 30</p>
+    <button onclick="window.open('https://wa.me/41767487769','_blank')"
+      data-en="Open WhatsApp" data-de="WhatsApp öffnen" data-es="Abrir WhatsApp" data-fr="Ouvrir WhatsApp" data-it="Apri WhatsApp" data-ru="Открыть WhatsApp" data-uk="Відкрити WhatsApp">Open WhatsApp</button>
+    <br><br>
+    <button onclick="closeWhatsAppPopup()"
+      data-en="Close" data-de="Schließen" data-es="Cerrar" data-fr="Fermer" data-it="Chiudi" data-ru="Закрыть" data-uk="Закрити">Close</button>
+  </div>
+</div>
+
+<!-- PRIVACY POPUP -->
+<div id="privacyPopup" class="lightbox">
+  <div class="popup-box" style="max-width:700px;text-align:left;">
+    <h3
+      data-en="Privacy Policy"
+      data-de="Datenschutzerklärung"
+      data-es="Política de privacidad"
+      data-fr="Politique de confidentialité"
+      data-it="Informativa sulla privacy"
+      data-ru="Политика конфиденциальности"
+      data-uk="Політика конфіденційності">Privacy Policy</h3>
+    <p data-en="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Switzerland, is responsible for the processing of personal data."
+       data-de="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Schweiz, ist verantwortlich für die Verarbeitung personenbezogener Daten."
+       data-es="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Suiza, es responsable del tratamiento de datos personales."
+       data-fr="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Suisse, est responsable du traitement des données personnelles."
+       data-it="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Svizzera, è responsabile del trattamento dei dati personali."
+       data-ru="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Швейцария, отвечает за обработку персональных данных."
+       data-uk="LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Швейцарія, відповідає за обробку персональних даних.">LifeCare Med Swiss, Neuhausweg 3, 8712 Stäfa, Switzerland, is responsible for the processing of personal data.</p>
+    <p data-en="We collect personal data such as email addresses and communication details when you contact us via email or WhatsApp."
+       data-de="Wir erfassen personenbezogene Daten wie E-Mail-Adressen und Kommunikationsdaten, wenn Sie uns per E-Mail oder WhatsApp kontaktieren."
+       data-es="Recopilamos datos personales como direcciones de correo electrónico y datos de comunicación cuando nos contacta por correo electrónico o WhatsApp."
+       data-fr="Nous collectons des données personnelles telles que les adresses e-mail et les coordonnées lorsque vous nous contactez par e-mail ou WhatsApp."
+       data-it="Raccogliamo dati personali come indirizzi e-mail e dettagli di comunicazione quando ci contattate via e-mail o WhatsApp."
+       data-ru="Мы собираем персональные данные, такие как адреса электронной почты, когда вы связываетесь с нами."
+       data-uk="Ми збираємо персональні дані, коли ви зв'язуєтеся з нами електронною поштою або через WhatsApp.">We collect personal data such as email addresses and communication details when you contact us via email or WhatsApp.</p>
+    <p data-en="Email: If you contact us by email, we process your email address, the content of your message and any other details you provide, solely to handle your inquiry. Emails are kept only as long as necessary to handle the inquiry and to meet statutory retention obligations."
+       data-de="E-Mail: Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre E-Mail-Adresse, den Inhalt Ihrer Nachricht und weitere von Ihnen angegebene Daten ausschließlich zur Bearbeitung Ihrer Anfrage. E-Mails werden nur so lange gespeichert, wie es zur Bearbeitung der Anfrage und zur Erfüllung gesetzlicher Aufbewahrungspflichten erforderlich ist."
+       data-es="Correo electrónico: si nos contacta por correo electrónico, tratamos su dirección de correo, el contenido de su mensaje y los demás datos que facilite exclusivamente para gestionar su consulta. Los correos se conservan solo el tiempo necesario para gestionar la consulta y cumplir las obligaciones legales de conservación."
+       data-fr="E-mail : si vous nous contactez par e-mail, nous traitons votre adresse e-mail, le contenu de votre message et les autres informations que vous fournissez, exclusivement pour traiter votre demande. Les e-mails ne sont conservés que le temps nécessaire au traitement de la demande et au respect des obligations légales de conservation."
+       data-it="E-mail: se ci contattate via e-mail, trattiamo il vostro indirizzo e-mail, il contenuto del messaggio e gli altri dati forniti esclusivamente per gestire la vostra richiesta. Le e-mail vengono conservate solo per il tempo necessario a gestire la richiesta e ad adempiere agli obblighi legali di conservazione."
+       data-ru="Электронная почта: если вы связываетесь с нами по электронной почте, мы обрабатываем ваш адрес электронной почты, содержание сообщения и другие указанные вами данные исключительно для обработки вашего запроса. Письма хранятся только в течение времени, необходимого для обработки запроса и выполнения установленных законом обязанностей по хранению."
+       data-uk="Електронна пошта: якщо ви зв'язуєтеся з нами електронною поштою, ми обробляємо вашу адресу електронної пошти, зміст повідомлення та інші надані вами дані виключно для обробки вашого запиту. Листи зберігаються лише стільки, скільки необхідно для обробки запиту та виконання встановлених законом обов'язків щодо зберігання.">Email: If you contact us by email, we process your email address, the content of your message and any other details you provide, solely to handle your inquiry. Emails are kept only as long as necessary to handle the inquiry and to meet statutory retention obligations.</p>
+    <p data-en="WhatsApp: If you contact us via WhatsApp, we process your phone number, your profile name (if visible to us) and the content of your messages, solely to handle your inquiry. WhatsApp is operated by WhatsApp Ireland Limited (Meta group). In connection with its use, data such as metadata may be processed by WhatsApp and transferred to other countries, including the USA. Please also note WhatsApp's own privacy policy. If you prefer not to use WhatsApp, you can contact us by email."
+       data-de="WhatsApp: Wenn Sie uns über WhatsApp kontaktieren, verarbeiten wir Ihre Telefonnummer, Ihren Profilnamen (sofern für uns sichtbar) und den Inhalt Ihrer Nachrichten ausschließlich zur Bearbeitung Ihrer Anfrage. WhatsApp wird von der WhatsApp Ireland Limited (Meta-Gruppe) betrieben. Bei der Nutzung können Daten wie Metadaten von WhatsApp verarbeitet und in andere Länder, auch in die USA, übermittelt werden. Bitte beachten Sie zusätzlich die Datenschutzbestimmungen von WhatsApp. Wenn Sie WhatsApp nicht nutzen möchten, können Sie uns per E-Mail kontaktieren."
+       data-es="WhatsApp: si nos contacta por WhatsApp, tratamos su número de teléfono, su nombre de perfil (si nos resulta visible) y el contenido de sus mensajes exclusivamente para gestionar su consulta. WhatsApp está operado por WhatsApp Ireland Limited (grupo Meta). Con su uso, WhatsApp puede tratar datos como los metadatos y transferirlos a otros países, incluido EE. UU. Tenga en cuenta también la política de privacidad de WhatsApp. Si prefiere no usar WhatsApp, puede contactarnos por correo electrónico."
+       data-fr="WhatsApp : si vous nous contactez via WhatsApp, nous traitons votre numéro de téléphone, votre nom de profil (s'il nous est visible) et le contenu de vos messages exclusivement pour traiter votre demande. WhatsApp est exploité par WhatsApp Ireland Limited (groupe Meta). Lors de son utilisation, des données telles que les métadonnées peuvent être traitées par WhatsApp et transférées vers d'autres pays, y compris les États-Unis. Veuillez également consulter la politique de confidentialité de WhatsApp. Si vous préférez ne pas utiliser WhatsApp, vous pouvez nous contacter par e-mail."
+       data-it="WhatsApp: se ci contattate tramite WhatsApp, trattiamo il vostro numero di telefono, il nome del profilo (se visibile) e il contenuto dei messaggi esclusivamente per gestire la vostra richiesta. WhatsApp è gestito da WhatsApp Ireland Limited (gruppo Meta). Durante l'uso, dati come i metadati possono essere trattati da WhatsApp e trasferiti in altri paesi, inclusi gli Stati Uniti. Consultate anche l'informativa sulla privacy di WhatsApp. Se preferite non usare WhatsApp, potete contattarci via e-mail."
+       data-ru="WhatsApp: если вы связываетесь с нами через WhatsApp, мы обрабатываем ваш номер телефона, имя профиля (если оно нам видно) и содержание сообщений исключительно для обработки вашего запроса. WhatsApp управляется компанией WhatsApp Ireland Limited (группа Meta). При его использовании такие данные, как метаданные, могут обрабатываться WhatsApp и передаваться в другие страны, включая США. Учитывайте также политику конфиденциальности WhatsApp. Если вы не хотите использовать WhatsApp, свяжитесь с нами по электронной почте."
+       data-uk="WhatsApp: якщо ви зв'язуєтеся з нами через WhatsApp, ми обробляємо ваш номер телефону, ім'я профілю (якщо воно нам видно) та зміст повідомлень виключно для обробки вашого запиту. WhatsApp управляється компанією WhatsApp Ireland Limited (група Meta). Під час його використання такі дані, як метадані, можуть оброблятися WhatsApp і передаватися до інших країн, зокрема до США. Зверніть також увагу на політику конфіденційності WhatsApp. Якщо ви не хочете користуватися WhatsApp, зв'яжіться з нами електронною поштою.">WhatsApp: If you contact us via WhatsApp, we process your phone number, your profile name (if visible to us) and the content of your messages, solely to handle your inquiry. WhatsApp is operated by WhatsApp Ireland Limited (Meta group). In connection with its use, data such as metadata may be processed by WhatsApp and transferred to other countries, including the USA. Please also note WhatsApp's own privacy policy. If you prefer not to use WhatsApp, you can contact us by email.</p>
+    <p data-en="This data is used exclusively to respond to inquiries and maintain communication."
+       data-de="Diese Daten werden ausschließlich zur Bearbeitung von Anfragen und zur Kommunikation verwendet."
+       data-es="Estos datos se utilizan exclusivamente para responder a consultas y mantener la comunicación."
+       data-fr="Ces données sont utilisées exclusivement pour répondre aux demandes et maintenir la communication."
+       data-it="Questi dati vengono utilizzati esclusivamente per rispondere alle richieste e mantenere la comunicazione."
+       data-ru="Эти данные используются исключительно для обработки запросов и поддержания связи."
+       data-uk="Ці дані використовуються виключно для обробки запитів і підтримки зв'язку.">This data is used exclusively to respond to inquiries and maintain communication.</p>
+    <p data-en="Users have the right to request access, correction, or deletion of their personal data at any time."
+       data-de="Nutzer haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung ihrer personenbezogenen Daten."
+       data-es="Los usuarios tienen derecho a solicitar acceso, corrección o eliminación de sus datos personales en cualquier momento."
+       data-fr="Les utilisateurs ont le droit de demander l'accès, la correction ou la suppression de leurs données personnelles à tout moment."
+       data-it="Gli utenti hanno il diritto di richiedere l'accesso, la correzione o la cancellazione dei propri dati personali in qualsiasi momento."
+       data-ru="Пользователи имеют право в любое время запросить доступ, исправление или удаление своих персональных данных."
+       data-uk="Користувачі мають право в будь-який час запросити доступ, виправлення або видалення своїх персональних даних.">Users have the right to request access, correction, or deletion of their personal data at any time.</p>
+    <div style="text-align:center;margin-top:20px;">
+      <button onclick="closePrivacyPopup()"
+        data-en="Close" data-de="Schließen" data-es="Cerrar" data-fr="Fermer" data-it="Chiudi" data-ru="Закрыть" data-uk="Закрити">Close</button>
+    </div>
+  </div>
+</div>
+
+<div id="impressumPopup" class="lightbox"><div class="popup-box" style="max-width:600px;text-align:left;">
+<h3 data-en="Legal notice" data-de="Impressum" data-es="Aviso legal" data-fr="Mentions légales" data-it="Note legali" data-ru="Выходные данные" data-uk="Правова інформація">Legal notice</h3>
+<p>LifeCare Med Swiss<br><span id="impressumOwner"></span>Neuhausweg 3, 8712 Stäfa, Switzerland<br>E-Mail: info@lifecaremedswiss.com<br>WhatsApp: +41 76 277 94 30</p>
+<!-- TODO vor Livegang: Inhaber, UID, Handelsregistereintrag, Rechtsform hier ergaenzen -->
+<div style="text-align:center;margin-top:20px;"><button onclick="closeImpressumPopup()" data-en="Close" data-de="Schließen" data-es="Cerrar" data-fr="Fermer" data-it="Chiudi" data-ru="Закрыть" data-uk="Закрити">Close</button></div></div></div>
+<script>
+/* Inhabername: nicht im Quelltext, wird erst beim Klick auf "Impressum" aus kodierten Teilen zusammengesetzt */
+function openImpressumPopup(){
+  var o = document.getElementById('impressumOwner');
+  if (o && !o.textContent) {
+    try {
+      var p = ['QW5u','YSBN','w7Zo','bG1h','bm4='];
+      o.textContent = 'Inhaber / Owner: ' + decodeURIComponent(escape(atob(p.join(''))));
+      o.appendChild(document.createElement('br'));
+    } catch(e) {}
+  }
+  document.getElementById('impressumPopup')?.classList.add('active');
+}
+function closeImpressumPopup(){document.getElementById('impressumPopup')?.classList.remove('active');}
+</script>
+<!-- FOOTER -->
+<footer>
+  <div style="font-weight:700;font-family:'Montserrat',sans-serif;font-size:16px;">LifeCare Med Swiss</div>
+  <div>Neuhausweg 3, 8712 Stäfa, Switzerland</div>
+  <div>Email: <a href="mailto:info@lifecaremedswiss.com">info@lifecaremedswiss.com</a></div>
+  <div>WhatsApp: +41 76 277 94 30</div>
+  <div style="font-size:12px;opacity:0.8;margin-top:6px;" data-en="Information on this website is intended for manufacturers, distributors, importers and healthcare professionals." data-de="Die Informationen auf dieser Website richten sich an Hersteller, Händler, Importeure und Fachpersonen." data-es="La información de este sitio web está dirigida a fabricantes, distribuidores, importadores y profesionales sanitarios." data-fr="Les informations de ce site s'adressent aux fabricants, distributeurs, importateurs et professionnels de santé." data-it="Le informazioni di questo sito sono rivolte a fabbricanti, distributori, importatori e operatori sanitari." data-ru="Информация на этом сайте предназначена для производителей, дистрибьюторов, импортёров и медицинских специалистов." data-uk="Інформація на цьому сайті призначена для виробників, дистриб'юторів, імпортерів та медичних фахівців.">Information on this website is intended for manufacturers, distributors, importers and healthcare professionals.</div>
+  <div style="margin-top:12px;">
+    <a href="#" onclick="openPrivacyPopup(); return false;"
+       data-en="Privacy Policy" data-de="Datenschutzerklärung" data-es="Política de privacidad" data-fr="Politique de confidentialité" data-it="Privacy" data-ru="Конфиденциальность" data-uk="Конфіденційність">Privacy Policy</a>
+    &nbsp;|&nbsp; <a href="#" onclick="openImpressumPopup(); return false;" data-en="Legal notice" data-de="Impressum" data-es="Aviso legal" data-fr="Mentions légales" data-it="Note legali" data-ru="Выходные данные" data-uk="Правова інформація">Legal notice</a>
+  </div>
+  <div style="margin-top:8px;font-size:12px;opacity:0.6;">© 2026 LifeCare Med Swiss. All rights reserved.</div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner">
+  <span
+    data-en="This website does not use tracking cookies. By using this site, you accept basic technical data processing."
+    data-de="Diese Website verwendet keine Tracking-Cookies. Durch die Nutzung akzeptieren Sie die grundlegende Datenverarbeitung."
+    data-es="Este sitio web no utiliza cookies de seguimiento. Al usarlo, acepta el procesamiento básico de datos."
+    data-fr="Ce site n'utilise pas de cookies de suivi. En l'utilisant, vous acceptez le traitement technique de base des données."
+    data-it="Questo sito non utilizza cookie di tracciamento. Utilizzandolo, accettate il trattamento tecnico di base dei dati."
+    data-fr="Ce site n'utilise pas de cookies de suivi. En l'utilisant, vous acceptez le traitement technique de base des données."
+    data-it="Questo sito non utilizza cookie di tracciamento. Utilizzandolo, accettate il trattamento tecnico di base dei dati."
+    data-ru="Этот сайт не использует отслеживающие cookie. Используя сайт, вы соглашаетесь с базовой обработкой данных."
+    data-uk="Цей сайт не використовує файли cookie для відстеження. Використовуючи сайт, ви погоджуєтесь на базову обробку даних.">
+    This website does not use tracking cookies. By using this site, you accept basic technical data processing.
+  </span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none'">OK</button>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+/* ==================== CATALOG DATA ==================== */
+const catalog = {
+  Urology: {
+    "Access Products": [
+      { name: "Urology Set", img: "images/Picture1_Urology.jpg", cat: "Urology" },
+      { name: "PTFE Guidewire", img: "images/Picture2_PTFEGuidewire.jpg", cat: "Urology" },
+      { name: "Ureteric Catheter", img: "images/Picture3_Ureteric_Catheter.jpg", cat: "Urology" },
+      { name: "Ureteral Access Sheath", img: "images/Picture4_Ureteral_Access_Sheath.jpg", cat: "Urology" },
+      { name: "Chiba Needle", img: "images/Picture5_Chiba_Needle.jpg", cat: "Urology" },
+      { name: "Introducer Needle", img: "images/Picture6_Introducer_Needle.jpg", cat: "Urology" },
+      { name: "IP Needle", img: "images/Picture7_IP_Needle.jpg", cat: "Urology" },
+      { name: "Hydro Twist Guidewire", img: "images/Picture8_Hydro_Twist_Guidewire.jpg", cat: "Urology" },
+      { name: "Hydrophilic Guidewire", img: "images/Picture9_Hydrophilic_Guidewire.jpg", cat: "Urology" },
+      { name: "Lunderquist Guidewire", img: "images/Picture10_Lunderquist_Guidewire.jpg", cat: "Urology" },
+      { name: "PTFE Guidewire (SS)", img: "images/Picture11_PTFE_Guidewire.jpg", cat: "Urology" },
+      { name: "IP Needle (alt)", img: "images/Picture57_IPNeedle.jpg", cat: "Urology" },
+      { name: "Chiba Needle (alt)", img: "images/Picture58_ChibaNeedle.jpg", cat: "Urology" },
+      { name: "Introducer Needle (alt)", img: "images/Picture59_IntroducerNeedle.jpg", cat: "Urology" },
+      { name: "Hydro Twist Guidewire (alt)", img: "images/Picture60_HydroTwisterGuidewire.jpg", cat: "Urology" },
+      { name: "Hydrophilic Guidewire (alt)", img: "images/Picture61_HydrophilicGuidewire.jpg", cat: "Urology" },
+      { name: "Lunderquist Guidewire (alt)", img: "images/Picture62_LunderquistGuidewire.jpg", cat: "Urology" },
+    ],
+    "Accessories": [
+      { name: "EEC (Bladder Evacuator)", img: "images/Picture12_EEC.jpg", cat: "Urology" },
+      { name: "Pathfinder (Track Finder)", img: "images/Picture13_Pathfinder.jpg", cat: "Urology" },
+      { name: "Penile Clamp", img: "images/Picture14_Penile_Clamp.jpg", cat: "Urology" },
+      { name: "TUR Set", img: "images/Picture15_TurSet.jpg", cat: "Urology" },
+      { name: "Cysto Bridge", img: "images/Picture16_CystoBridge.jpg", cat: "Urology" },
+      { name: "TURP Set", img: "images/Picture17_TurpSet.jpg", cat: "Urology" },
+      { name: "Bugbee Electrode", img: "images/Picture18_Bugbee_Electrode.jpg", cat: "Urology" },
+      { name: "TURP Loops And Electrodes", img: "images/Picture19_TurpElectrode.jpg", cat: "Urology" },
+      { name: "Biopsy Gun", img: "images/Picture79_BiopsyGun.jpg", cat: "Urology" },
+      { name: "Biopsy Needle", img: "images/Picture80_BiopsyNeedle.jpg", cat: "Urology" },
+      { name: "Magnum Biopsy Instrument", img: "images/Picture81_MagnumBiopsyInstrument.jpg", cat: "Urology" },
+    ],
+    "Dilation Products": [
+      { name: "Amplatz Sheath", img: "images/Picture20_AmplatzSheath.jpg", cat: "Urology" },
+      { name: "Amplatz Renal Dilator Kit", img: "images/Picture21_AmplatzDilator.jpg", cat: "Urology" },
+      { name: "Fascial Dilator", img: "images/Picture22_FascialDilator.jpg", cat: "Urology" },
+      { name: "Filiform Dilator", img: "images/Picture23_FiliformDilator.jpg", cat: "Urology" },
+      { name: "Meatal Dilator", img: "images/Picture24_MeatalDilator.jpg", cat: "Urology" },
+      { name: "Metal Telescopic Dilator", img: "images/Picture25_MetalTelescopicDilator.jpg", cat: "Urology" },
+      { name: "Nephrotrack Balloon Dilator", img: "images/Picture26_NephrotrackBalloon.jpg", cat: "Urology" },
+      { name: "Nottingham One-Step Dilator", img: "images/Picture27_Nottingham_One.jpg", cat: "Urology" },
+      { name: "Screw Dilator", img: "images/Picture28_Screw_Dilator.jpg", cat: "Urology" },
+      { name: "Ureteral Balloon Dilator", img: "images/Picture29_UreteralBalloonDilator.jpg", cat: "Urology" },
+      { name: "Ureteral Dilator Set", img: "images/Picture30_UreteralDilator.jpg", cat: "Urology" },
+      { name: "Urethral Dilator", img: "images/Picture31_UrethralDilator.jpg", cat: "Urology" },
+      { name: "S Shape Dilator", img: "images/Picture32_SShapeDilator.jpg", cat: "Urology" },
+      { name: "Fascial Dilator (alt)", img: "images/Picture64_FascialDilator.jpg", cat: "Urology" },
+      { name: "Double Step Dilator", img: "images/Picture65_DoubleStepDilator.jpg", cat: "Urology" },
+      { name: "Balloon Dilator (Catheter)", img: "images/Picture66_Balloon_Dilator.jpg", cat: "Urology" },
+    ],
+    "Drainage Products": [
+      { name: "Foley Balloon Catheter", img: "images/Picture33_FoleyBalloonCat.jpg", cat: "Urology" },
+      { name: "Nephrostomy Drainage Kit (Pigtail)", img: "images/Picture34_NephrostomyDrainage.jpg", cat: "Urology" },
+      { name: "Malecot Nephrostomy Kit", img: "images/Picture35_MalecotNephros.jpg", cat: "Urology" },
+      { name: "Nephrostomy Tube", img: "images/Picture36_NephrostomyTube.jpg", cat: "Urology" },
+      { name: "Percutaneous Nephrostomy Drainage Catheter", img: "images/Picture37_Percutaneous_Nephro.jpg", cat: "Urology" },
+      { name: "Pigtail Nephrostomy with Trocar", img: "images/Picture38_Pigtail_Nephro.jpg", cat: "Urology" },
+      { name: "Pigtail Catheter with Safety Mechanism", img: "images/Picture39_PigtailCatheterwithSafety.jpg", cat: "Urology" },
+      { name: "Re-Entry Malecot Catheter", img: "images/Picture40_Re_entryMalecot.jpg", cat: "Urology" },
+      { name: "Malecot Nephrostomy Catheter", img: "images/Picture41_MalecotNephrostCatheter.jpg", cat: "Urology" },
+      { name: "Suprapubic Malecot Catheter", img: "images/Picture42_SuprapubicMalecotCatheter.jpg", cat: "Urology" },
+      { name: "Suprapubic Cystostomy Kit", img: "images/Picture43_Suprapubic_Cystostomy.jpg", cat: "Urology" },
+      { name: "Suprapubic Drainage Kit with Silicone Balloon Catheter", img: "images/Picture44_SuprapubicDrainage.jpg", cat: "Urology" },
+      { name: "Ureteral Double J Stent with Pulling String", img: "images/Picture45_Ureteral_DJS_Pullingstring.jpg", cat: "Urology" },
+      { name: "Double J Stent", img: "images/Picture46_DJS.jpg", cat: "Urology" },
+      { name: "Urethral Stent", img: "images/Picture47_UrethralStent.jpg", cat: "Urology" },
+      { name: "Tubal Cannulation", img: "images/Picture67_TubalCannulation.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Kit", img: "images/Picture68_AbscessDrainageKit.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Catheter with Trocar", img: "images/Picture69_AbscessDrainageCatheterwithTrocar.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Catheter", img: "images/Picture70_AbscessDrainageC.jpg", cat: "Urology" },
+      { name: "Naso Jejunal Feeding Tube", img: "images/Picture71_NasoJejunal.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Malecot Catheter", img: "images/Picture72_AbscessDrainageMalecotC.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Malecot Catheter Kit", img: "images/Picture73_AbscessMalecotDrainageKit.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Catheter Kit (Pigtail)", img: "images/Picture74_AbscessDrainKit.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Pigtail Catheters with Safety Mechanism", img: "images/Picture75_AbscessDrainPigtailCSafetyMech.jpg", cat: "Urology" },
+      { name: "PTBD Set", img: "images/Picture76_PTBD_Set.jpg", cat: "Urology" },
+      { name: "Abscess Drainage Suprapubic Malecot Catheter", img: "images/Picture77_AbscessDrainSuprapubicMalecC.jpg", cat: "Urology" },
+      { name: "PTBD Catheter", img: "images/Picture78_PTBDCat.jpg", cat: "Urology" },
+    ],
+    "Stone Management": [
+      { name: "Biopsy Forceps", img: "images/Picture48_BiopsyForceps.jpg", cat: "Urology" },
+      { name: "Grasping Forceps (URS and Cystoscopy)", img: "images/Picture49_GraspingForceps.jpg", cat: "Urology" },
+      { name: "PCNL Forceps", img: "images/Picture50_PCNLForceps.jpg", cat: "Urology" },
+      { name: "Stone Grasping Forceps", img: "images/Picture51_StoneGraspingForceps.jpg", cat: "Urology" },
+      { name: "Biprong Forcep", img: "images/Picture52_BiprongForceps.jpg", cat: "Urology" },
+      { name: "Stone Retrieval Basket (SS)", img: "images/Picture53_StoneRetrievalBasket.jpg", cat: "Urology" },
+      { name: "Stone Basket", img: "images/Picture54_StoneBasket.jpg", cat: "Urology" },
+      { name: "Perk (PCNL) Basket", img: "images/Picture55_PCNLBasket.jpg", cat: "Urology" },
+      { name: "Stone Retrieval Basket (Nitinol)", img: "images/Picture56_StoneRetrievalBasket.jpg", cat: "Urology" },
+    ],
+  },
+  Gastroenterology: {
+    "Drainage Products": [
+      { name: "Gastroenterology Set", img: "images/Picture82_GastroEnterology.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Standard)", img: "images/Picture83_BiliaryStent_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Amsterdam)", img: "images/Picture84_BiliaryStentAmsterdam_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Single Pigtail)", img: "images/Picture85_BiliaryStentSinglePigtail_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Double Pigtail)", img: "images/Picture86_BiliaryStentDoublePigtail_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Straight)", img: "images/Picture87_BiliaryStentStraight_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Biliary Stent (Pancreatic)", img: "images/Picture88_BiliaryStentPancreatic_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Naso Biliary Drainage Catheter (NBDC)", img: "images/Picture89_NasoBiliaryDrainC_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Abscess Drainage Sets (Pigtail)", img: "images/Picture90_Abscess_DrainageSet_Pigtail_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Abscess Drainage Sets (Malecot)", img: "images/Picture91_Abscess_DrainSet_MalecotType_Gastro.jpg", cat: "Gastroenterology" },
+    ],
+    "Access Products": [
+      { name: "IP Needle", img: "images/Picture92_IPNNeedle_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Chiba Needle", img: "images/Picture93_ChibaNeedle_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Introducer Needle", img: "images/Picture94_IntroducerNeedle_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Hydro Twister Guide Wire", img: "images/Picture95_HydroTwisterGuidewire_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Hydrophilic Guide Wire", img: "images/Picture96_Hydrophilic_Guidewire_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "PTFE Guide Wire", img: "images/Picture97_PTFE_Guidewire_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Sclerotherapy Needle", img: "images/Picture98_SclerotherapyNeedle_Gastro.jpg", cat: "Gastroenterology" },
+    ],
+    "Accessories": [
+      { name: "Bite Block", img: "images/Picture99_BiteBlock_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Cleaning Brush", img: "images/Picture100_CleaningBrush_Gastro.jpg", cat: "Gastroenterology" },
+      { name: "Colonoscopy Pants", img: "images/Picture101_ColonoscopyPants_Gastro.jpg", cat: "Gastroenterology" },
+    ],
+  },
+  Gynaecology: {
+    "Access Products": [
+      { name: "Gynaecology Set", img: "images/Picture102_Gynaecology.jpg", cat: "Gynaecology" },
+      { name: "IUI", img: "images/Picture103_IUI_Gynaecology.jpg", cat: "Gynaecology" },
+    ],
+  },
+};
+
+/* ==================== LANGUAGE ==================== */
+function setLang(lang) {
+  document.querySelectorAll('[data-langbtn]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-langbtn') === lang);
+  });
+  document.querySelectorAll('[data-en]').forEach(el => {
+    let text = el.getAttribute('data-' + lang) || el.getAttribute('data-en');
+    if (!text) return;
+    if (text.includes('<')) { el.innerHTML = text; } else { el.textContent = text; }
+  });
+  try { localStorage.setItem('siteLang', lang); } catch(e) {}
+}
+
+function detectLanguage() {
+  const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if (lang.startsWith('de')) return 'de';
+  if (lang.startsWith('es')) return 'es';
+  if (lang.startsWith('fr')) return 'fr';
+  if (lang.startsWith('it')) return 'it';
+  if (lang.startsWith('ru')) return 'ru';
+  if (lang.startsWith('uk')) return 'uk';
+  return 'en';
+}
+
+/* ==================== HERO SLIDESHOW ==================== */
+let currentSlide = 0;
+const slideshowInterval = 5000;
+let slideshowTimer = null;
+
+function goToSlide(n) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  if (!slides.length) return;
+  n = ((n % slides.length) + slides.length) % slides.length;
+  slides.forEach((s, i) => s.classList.toggle('active', i === n));
+  dots.forEach((d, i) => d.classList.toggle('active', i === n));
+  currentSlide = n;
+  // restart timer on manual navigation
+  startSlideshow();
+}
+
+function startSlideshow() {
+  if (slideshowTimer) clearInterval(slideshowTimer);
+  slideshowTimer = setInterval(() => {
+    const slides = document.querySelectorAll('.hero-slide');
+    goToSlide((currentSlide + 1) % slides.length);
+  }, slideshowInterval);
+}
+
+/* ==================== SECTIONS ==================== */
+function showSection(id) {
+  const pages = document.querySelectorAll('.page');
+  const hero = document.getElementById('heroHeader');
+  pages.forEach(p => p.classList.remove('active'));
+  if (hero) hero.style.display = 'none';
+  if (id === 'home') {
+    if (hero) { hero.style.display = 'block'; startSlideshow(); }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  const target = document.getElementById(id);
+  if (target) { target.classList.add('active'); }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ==================== LIGHTBOX ==================== */
+function openLightbox(src) {
+  if (!src) return;
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  if (!lb || !img) return;
+  img.classList.remove('zoomed');
+  img.src = '';
+  img.onload = () => lb.classList.add('active');
+  img.onerror = () => {};
+  img.src = src;
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  if (lb) lb.classList.remove('active');
+  if (img) { img.src = ''; img.onload = null; }
+}
+
+document.addEventListener('wheel', function(e) {
+  const lb = document.getElementById('lightbox');
+  if (!lb || !lb.classList.contains('active')) return;
+  const img = document.getElementById('lightbox-img');
+  if (!img) return;
+  e.preventDefault();
+  img.classList.toggle('zoomed', e.deltaY < 0);
+}, { passive: false });
+
+/* ==================== POPUPS ==================== */
+function openEmailPopup() { document.getElementById('emailPopup')?.classList.add('active'); }
+function closeEmailPopup() { document.getElementById('emailPopup')?.classList.remove('active'); }
+function openWhatsAppPopup() { document.getElementById('whatsappPopup')?.classList.add('active'); }
+function closeWhatsAppPopup() { document.getElementById('whatsappPopup')?.classList.remove('active'); }
+function openRegDocsPopup() { document.getElementById('regPopup')?.classList.add('active'); }
+function closeRegDocsPopup() { document.getElementById('regPopup')?.classList.remove('active'); }
+function openPrivacyPopup() { document.getElementById('privacyPopup')?.classList.add('active'); }
+function closePrivacyPopup() { document.getElementById('privacyPopup')?.classList.remove('active'); }
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { closeLightbox(); }
+});
+
+/* ==================== DOM READY ==================== */
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Init language
+  let savedLang = 'en';
+  try { savedLang = localStorage.getItem('siteLang') || detectLanguage(); } catch(e) { savedLang = detectLanguage(); }
+  setLang(savedLang);
+
+  // Show home
+  showSection('home');
+  startSlideshow();
+
+  // Hover preview helper
+  function positionEl(el, e) {
+    const x = e.clientX + 22;
+    const y = e.clientY - 90;
+    el.style.left = Math.min(x, window.innerWidth - 230) + 'px';
+    el.style.top = Math.max(10, Math.min(y, window.innerHeight - 175)) + 'px';
+  }
+
+  // Mega-menu links: hover preview + click lightbox
+  const menuHover = document.getElementById('menuHoverImg');
+  const menuHoverSrc = document.getElementById('menuHoverImgSrc');
+
+  document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('mouseenter', function(e) {
+      if (!this.dataset.img || !menuHover) return;
+      menuHoverSrc.src = this.dataset.img;
+      menuHover.classList.add('visible');
+      positionEl(menuHover, e);
+    });
+    link.addEventListener('mousemove', function(e) { if (menuHover) positionEl(menuHover, e); });
+    link.addEventListener('mouseleave', function() { if (menuHover) menuHover.classList.remove('visible'); });
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (menuHover) menuHover.classList.remove('visible');
+      if (this.dataset.img) openLightbox(this.dataset.img);
+    });
+  });
+
+  // Build structured products catalog page – CARD GRID
+  const container = document.getElementById('products-catalog-list');
+  if (container && typeof catalog !== 'undefined') {
+    const wrap = document.createElement('div');
+    wrap.className = 'prod-catalog';
+
+    const catIcons = { Urology: '🫁', Gastroenterology: '🔬', Gynaecology: '🏥' };
+
+    Object.keys(catalog).forEach(mainCat => {
+      const mainDiv = document.createElement('div');
+      mainDiv.className = 'prod-main-cat';
+      const mainH = document.createElement('h2');
+      mainH.innerHTML = (catIcons[mainCat] || '📦') + ' ' + mainCat;
+      mainDiv.appendChild(mainH);
+
+      Object.keys(catalog[mainCat]).forEach(subCat => {
+        const subDiv = document.createElement('div');
+        subDiv.className = 'prod-subcat';
+        const subH = document.createElement('h3');
+        subH.textContent = subCat;
+        subDiv.appendChild(subH);
+
+        const grid = document.createElement('div');
+        grid.className = 'prod-card-grid';
+
+        catalog[mainCat][subCat].forEach(p => {
+          const card = document.createElement('div');
+          card.className = 'prod-card';
+
+          const img = document.createElement('img');
+          img.className = 'prod-card-img';
+          img.src = p.img || '';
+          img.alt = p.name;
+          img.loading = 'lazy';
+          img.onerror = function() {
+            this.style.display = 'none';
+            card.style.background = 'rgba(24,182,214,0.08)';
+          };
+
+          const label = document.createElement('div');
+          label.className = 'prod-card-name';
+          label.textContent = p.name;
+
+          card.appendChild(img);
+          card.appendChild(label);
+
+          card.addEventListener('click', function() {
+            if (p.img) openLightbox(p.img);
+          });
+
+          grid.appendChild(card);
+        });
+
+        subDiv.appendChild(grid);
+        mainDiv.appendChild(subDiv);
+      });
+      wrap.appendChild(mainDiv);
+    });
+    container.appendChild(wrap);
+  }
+
+  // Close mega menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.menu-item')) {
+      document.querySelectorAll('.menu-item .mega-menu').forEach(m => {
+        m.style.visibility = '';
+        m.style.opacity = '';
+      });
+    }
+  });
+
+});
+</script>
+
+<script>window.openLightbox=function(){openEmailPopup();};</script>
+</body>
+</html>
